@@ -762,3 +762,25 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 @media (prefers-reduced-motion: reduce) {
   .footer__mark *, .header__logo .lg-p > path { transform: none !important; opacity: 1 !important; }
 }
+
+/* ---------- Mascote vetorizado remando ---------- */
+/* Mascote remando: bote balança, remo faz a remada, ondas correm e espirra água */
+.masc-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.masc-rig { transform-box: view-box; transform-origin: 330px 470px; animation: masc-rock 2.4s ease-in-out infinite; }
+.masc-paddle { transform-box: view-box; animation: masc-row 2.4s ease-in-out infinite; }
+.masc-wave--front { animation: masc-wave 2.4s linear infinite; }
+.masc-wave--back { animation: masc-wave 3.6s linear infinite reverse; }
+.masc-drop { transform-box: fill-box; transform-origin: center; opacity: 0; animation: masc-drop 2.4s ease-out infinite; animation-delay: calc(var(--d) * 70ms); }
+@keyframes masc-rock { 0%, 100% { transform: translate(0, 0) rotate(-2.5deg); } 50% { transform: translate(8px, -7px) rotate(2deg); } }
+@keyframes masc-row { 0%, 100% { transform: rotate(-7deg); } 45% { transform: rotate(8deg); } }
+@keyframes masc-wave { to { transform: translateX(-160px); } }
+@keyframes masc-drop {
+  0%, 8% { opacity: 0; transform: translate(0, 12px) scale(.3); }
+  18% { opacity: 1; }
+  55% { opacity: 0; transform: translate(calc((var(--d) - 1) * -30px), -52px) scale(1); }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .masc-rig, .masc-paddle, .masc-wave--front, .masc-wave--back, .masc-drop { animation: none; } }
+.mascot__art { width: 100%; }
+.mascot__art .masc-svg { filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .18)); }
+@media (max-width: 760px) { .mascot__art { max-width: 260px; } }

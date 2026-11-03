@@ -34,3 +34,14 @@ As cores foram medidas no arquivo original. Se a marca tiver uma especificação
 ## Como refazer a vetorização
 
 O script está em `_src/logo-src/trace_logo.py` e precisa de `numpy`, `pillow` e `potracer`.
+
+# Mascote vetorizado — Tamanduá-de-colete no bote
+
+Redesenhado a partir do desenho original (`_src/mascote-src/mascote-bote-orig.png`, 319 × 332 px), em estilo de logomarca: contorno externo grosso e uniforme, curvas suaves e cores chapadas.
+
+| Arquivo | Para que serve |
+|---|---|
+| `mascote-tamandua-bote.svg` | Mascote parado, em vetor. |
+| `mascote-tamandua-remando.svg` | Mascote animado remando (bote balançando, remada, ondas e respingos). A animação já vem dentro do arquivo; abre no navegador. |
+
+Para refazer: `_src/mascote-src/trace_mascote.py` (mesmas dependências do logo).

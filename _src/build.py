@@ -7,6 +7,7 @@ IMG = os.path.join(ROOT, "assets", "img")
 WA = "5512997031363"
 
 LOGO_SVG = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "logo-src", "logo.svg"), encoding="utf-8").read()
+MASCOTE_REMANDO = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "mascote-src", "mascote-remando.svg"), encoding="utf-8").read()
 LOGO_HEADER = LOGO_SVG.replace('class="logo-svg"', 'class="logo-svg logo-anim"', 1)
 LOGO_FOOTER = LOGO_SVG.replace(' role="img" aria-label="Cia. de Rafting"', ' aria-hidden="true" focusable="false"', 1)
 
@@ -103,6 +104,7 @@ def _macro(s, name, fn):
         out.append(fn([a.strip() for a in s[j + len(tag):k - 1].split("|")])); i = k
 
 def expand(s):
+    s = s.replace("@@MASCOTE_REMANDO@@", MASCOTE_REMANDO)
     s = _macro(s, "g", lambda a: f'<a href="assets/img/{a[0]}.webp">' + img(a[0], a[1], "(max-width: 700px) 100vw, 25vw") + '</a>')
     s = _macro(s, "img", lambda a: img(a[0], a[1], a[2] if len(a) > 2 and a[2] else "100vw", a[3] if len(a) > 3 else ""))
     s = _macro(s, "icon", lambda a: icon(a[0], a[1] if len(a) > 1 else ""))
