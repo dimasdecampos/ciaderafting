@@ -279,7 +279,7 @@
       if (headLogo) headLogo.style.setProperty("--row", Math.sin(y / 110).toFixed(3));
       if (mark) {
         var top = mark.getBoundingClientRect().top;
-        var p = Math.max(0, Math.min(1, (vh - top) / (vh * 0.55)));
+        var p = Math.max(0, Math.min(1, (vh - top - 20) / Math.min(vh * 0.35, 300)));
         mark.style.setProperty("--p", p.toFixed(3));
       }
     }

@@ -750,7 +750,7 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .header__logo .lg-blue { transform: translateX(calc(var(--row, 0) * 8px)); }
 
 /* Logo grande do rodapé: monta conforme a rolagem */
-.footer__mark { --p: 1; color: #fff; max-width: 1100px; margin: 0 auto 70px; }
+.footer__mark { --p: 1; display: block; color: #fff; width: 230px; max-width: 100%; margin: 0 0 22px; }
 .footer__mark .lg-red { transform: translateX(calc((1 - var(--p)) * -560px)); }
 .footer__mark .lg-yellow { transform: translateX(calc((1 - var(--p)) * 560px)); }
 .footer__mark .lg-blue { transform-origin: left center; transform: scaleX(calc(.1 + var(--p) * .9)); }

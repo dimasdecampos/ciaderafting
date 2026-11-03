@@ -208,9 +208,9 @@ def header(active):
 FOOTER = '''
 <footer class="footer">
   <div class="container">
-    <div class="footer__mark" data-logo-parallax>@@LOGO_FOOTER@@</div>
     <div class="footer__grid">
       <div class="footer__brand">
+        <a class="footer__mark" href="index.html" aria-label="Cia. de Rafting — página inicial" data-logo-parallax>@@LOGO_FOOTER@@</a>
         <p>Conectando pessoas à natureza desde 1996. Rafting, trilhas e formação de guias na Mata Atlântica da Serra do Mar.</p>
         <div class="socials">
           <a href="https://www.instagram.com/ciaderafting/" target="_blank" rel="noopener" aria-label="Instagram">@icon(instagram)</a>
