@@ -114,7 +114,11 @@
 
 <main id="conteudo">
 <section class="hero">
-  <div class="hero__media"><img src="assets/img/hero-corredeira-sm.webp" srcset="assets/img/hero-corredeira-sm.webp 800w, assets/img/hero-corredeira.webp 1800w" sizes="100vw" alt="Bote da Cia. de Rafting atravessando uma corredeira no Rio Paraibuna" width="1800" height="1011" loading="eager" fetchpriority="high" decoding="async"></div>
+  <div class="hero__media" id="hero-slides" aria-roledescription="carrossel" aria-label="Fotos da Cia. de Rafting">
+    <div class="hero__slide is-active"><img src="assets/img/hero-corredeira-sm.webp" srcset="assets/img/hero-corredeira-sm.webp 800w, assets/img/hero-corredeira.webp 1800w" sizes="100vw" alt="Bote da Cia. de Rafting atravessando uma corredeira no Rio Paraibuna" width="1800" height="1011" loading="eager" fetchpriority="high" decoding="async"></div>
+    <div class="hero__slide"><img src="assets/img/corredeira-cachoeira-sm.webp" srcset="assets/img/corredeira-cachoeira-sm.webp 800w, assets/img/corredeira-cachoeira.webp 1800w" sizes="100vw" alt="Bote descendo uma corredeira forte entre pedras na Serra do Mar" width="1800" height="1200" loading="eager" fetchpriority="low" decoding="async"></div>
+    <div class="hero__slide"><img src="assets/img/rafting-comemoracao-sm.webp" srcset="assets/img/rafting-comemoracao-sm.webp 800w, assets/img/rafting-comemoracao.webp 1800w" sizes="100vw" alt="Grupo comemorando com remos para o alto no bote" width="1800" height="1200" loading="eager" fetchpriority="low" decoding="async"></div>
+  </div>
   <div class="container">
     <div class="hero__content">
       <span class="hero__kicker"><b>30 ANOS</b> Desde 1996 nas corredeiras do Rio Paraibuna</span>
@@ -123,6 +127,16 @@
       <div class="hero__actions">
         <a class="btn" href="#aventuras">Escolher minha aventura <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         <a class="btn btn--ghost" href="#" data-wa="Olá, Cia. de Rafting! Quero saber mais sobre o rafting."><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp</a>
+      </div>
+      <div class="hero__ctrl" role="group" aria-label="Controles do carrossel">
+        <button type="button" class="hero__arrow" data-hero="prev" aria-label="Foto anterior"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+        <div class="hero__bars" role="tablist" aria-label="Escolher foto">
+          <button type="button" role="tab" aria-selected="true" aria-label="Foto 1"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 2"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 3"><i></i></button>
+        </div>
+        <button type="button" class="hero__arrow" data-hero="next" aria-label="Próxima foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        <button type="button" class="hero__arrow hero__pause" data-hero="pause" aria-label="Pausar apresentação" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path class="p-pause" d="M8 5v14M16 5v14"/><path class="p-play" d="M7 4v16l13-8z"/></svg></button>
       </div>
     </div>
     <form class="booking" id="booking" aria-label="Verificar disponibilidade">
