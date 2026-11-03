@@ -231,6 +231,7 @@
         setTimeout(function () { slides[prev].classList.remove("is-prev"); }, 1400);
       }
       slides.forEach(function (s, k) { s.classList.toggle("is-active", k === cur); s.setAttribute("aria-hidden", String(k !== cur)); });
+      syncVideos();
       bars.forEach(function (b, k) {
         b.setAttribute("aria-selected", String(k === cur));
         /* reinicia a barra de progresso */
@@ -238,15 +239,30 @@
       });
       schedule();
     }
+    function duration() { return parseInt(slides[cur].getAttribute("data-duration"), 10) || INTERVAL; }
     function schedule() {
       clearTimeout(timer);
-      if (!paused) timer = setTimeout(function () { go(cur + 1); }, INTERVAL);
+      hero.style.setProperty("--hero-interval", duration() + "ms");
+      if (!paused) timer = setTimeout(function () { go(cur + 1); }, duration());
+    }
+
+    /* vídeo: só toca no slide ativo; reinicia ao voltar para ele */
+    var videos = $$("video", box);
+    function syncVideos() {
+      videos.forEach(function (v) {
+        var active = v.closest(".hero__slide") === slides[cur];
+        if (!v.classList.contains("is-ready")) return;
+        if (active && !paused && !document.hidden) {
+          try { v.currentTime = 0; } catch (e) {}
+          var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+        } else { v.pause(); }
+      });
     }
     function setPaused(p) {
       paused = p; hero.classList.toggle("is-paused", p);
       pauseBtn.setAttribute("aria-pressed", String(p));
       pauseBtn.setAttribute("aria-label", p ? "Retomar apresentação" : "Pausar apresentação");
-      if (p) clearTimeout(timer); else go(cur);
+      if (p) { clearTimeout(timer); videos.forEach(function (v) { v.pause(); }); } else go(cur);
     }
     $('[data-hero="prev"]', hero).addEventListener("click", function () { go(cur - 1); });
     $('[data-hero="next"]', hero).addEventListener("click", function () { go(cur + 1); });
@@ -261,7 +277,37 @@
       if (Math.abs(dx) > 60) go(cur + (dx < 0 ? 1 : -1));
     });
     /* pausa quando a aba fica oculta */
-    document.addEventListener("visibilitychange", function () { if (document.hidden) clearTimeout(timer); else schedule(); });
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) { clearTimeout(timer); videos.forEach(function (v) { v.pause(); }); }
+      else { schedule(); syncVideos(); }
+    });
+
+    /* Carregamento leve: capa primeiro; fotos e vídeo só depois que a página carregou */
+    function afterLoad() {
+      $$("img[data-src]", box).forEach(function (im) {
+        if (im.dataset.srcset) im.srcset = im.dataset.srcset;
+        im.src = im.dataset.src;
+        im.removeAttribute("data-src"); im.removeAttribute("data-srcset");
+      });
+      var c = navigator.connection || {};
+      var slow = c.saveData || /(^|-)2g$/.test(c.effectiveType || "");
+      if (reduce || slow) return;  /* fica só a capa */
+      var small = window.matchMedia("(max-width: 760px)").matches || c.effectiveType === "3g";
+      videos.forEach(function (v) {
+        v.addEventListener("canplaythrough", function ready() {
+          v.removeEventListener("canplaythrough", ready);
+          v.classList.add("is-ready");
+          /* se o vídeo é o slide atual, recomeça o tempo para ele tocar inteiro */
+          if (v.closest(".hero__slide") === slides[cur] && !paused) go(cur); else syncVideos();
+        });
+        v.preload = "auto";
+        v.src = small ? v.dataset.srcMobile : v.dataset.srcDesktop;
+        v.load();
+      });
+    }
+    function whenIdle(fn) { if ("requestIdleCallback" in window) requestIdleCallback(fn, { timeout: 1500 }); else setTimeout(fn, 200); }
+    if (document.readyState === "complete") whenIdle(afterLoad);
+    else window.addEventListener("load", function () { whenIdle(afterLoad); });
 
     slides.forEach(function (s, k) { s.setAttribute("aria-hidden", String(k !== 0)); });
     if (reduce) setPaused(true); else schedule();

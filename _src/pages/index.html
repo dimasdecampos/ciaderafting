@@ -1,9 +1,13 @@
-{"title": "Cia. de Rafting · Rafting e trilhas na Mata Atlântica · São Luiz do Paraitinga – SP", "description": "Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar. Desde 1996, com segurança certificada ISO 21.101. Reserve pelo WhatsApp.", "active": "index", "jsonld": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"TouristAttraction\",\"name\":\"Cia. de Rafting\",\"description\":\"Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar desde 1996.\",\"url\":\"https://www.ciaderafting.com/\",\"telephone\":\"+55-12-99703-1363\",\"email\":\"contato@ciaderafting.com.br\",\"foundingDate\":\"1996\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Rodovia Dr. Oswaldo Cruz, km 66,5 - Sítio Água\",\"addressLocality\":\"São Luiz do Paraitinga\",\"addressRegion\":\"SP\",\"postalCode\":\"12140-000\",\"addressCountry\":\"BR\"},\"sameAs\":[\"https://www.instagram.com/ciaderafting/\",\"https://www.facebook.com/Ciaderafting\"]}</script>"}
+{"title": "Cia. de Rafting · Rafting e trilhas na Mata Atlântica · São Luiz do Paraitinga – SP", "description": "Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar. Desde 1996, com segurança certificada ISO 21.101. Reserve pelo WhatsApp.", "active": "index", "preload": "assets/video/rafting-hero-poster.webp", "jsonld": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"TouristAttraction\",\"name\":\"Cia. de Rafting\",\"description\":\"Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar desde 1996.\",\"url\":\"https://www.ciaderafting.com/\",\"telephone\":\"+55-12-99703-1363\",\"email\":\"contato@ciaderafting.com.br\",\"foundingDate\":\"1996\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Rodovia Dr. Oswaldo Cruz, km 66,5 - Sítio Água\",\"addressLocality\":\"São Luiz do Paraitinga\",\"addressRegion\":\"SP\",\"postalCode\":\"12140-000\",\"addressCountry\":\"BR\"},\"sameAs\":[\"https://www.instagram.com/ciaderafting/\",\"https://www.facebook.com/Ciaderafting\"]}</script>"}
 <section class="hero">
-  <div class="hero__media" id="hero-slides" aria-roledescription="carrossel" aria-label="Fotos da Cia. de Rafting">
-    <div class="hero__slide is-active">@img(hero-corredeira|Bote da Cia. de Rafting atravessando uma corredeira no Rio Paraibuna|100vw|eager)</div>
-    <div class="hero__slide">@img(corredeira-cachoeira|Bote descendo uma corredeira forte entre pedras na Serra do Mar|100vw|preload)</div>
-    <div class="hero__slide">@img(rafting-comemoracao|Grupo comemorando com remos para o alto no bote|100vw|preload)</div>
+  <div class="hero__media" id="hero-slides" aria-roledescription="carrossel" aria-label="Fotos e vídeo da Cia. de Rafting">
+    <div class="hero__slide hero__slide--video is-active" data-duration="8000">
+      <img src="assets/video/rafting-hero-poster.webp" alt="Descida de rafting em primeira pessoa, com remo e respingos de água" width="1280" height="720" fetchpriority="high" decoding="async">
+      <video class="hero__video" muted playsinline preload="none" aria-hidden="true" tabindex="-1" data-src-desktop="assets/video/rafting-hero-720.mp4" data-src-mobile="assets/video/rafting-hero-480.mp4"></video>
+    </div>
+    <div class="hero__slide">@img(hero-corredeira|Bote da Cia. de Rafting atravessando uma corredeira no Rio Paraibuna|100vw|defer)</div>
+    <div class="hero__slide">@img(corredeira-cachoeira|Bote descendo uma corredeira forte entre pedras na Serra do Mar|100vw|defer)</div>
+    <div class="hero__slide">@img(rafting-comemoracao|Grupo comemorando com remos para o alto no bote|100vw|defer)</div>
   </div>
   <div class="container">
     <div class="hero__content">
@@ -16,8 +20,9 @@
       </div>
       <div class="hero__ctrl" role="group" aria-label="Controles do carrossel">
         <button type="button" class="hero__arrow" data-hero="prev" aria-label="Foto anterior">@icon(chevron-left)</button>
-        <div class="hero__bars" role="tablist" aria-label="Escolher foto">
-          <button type="button" role="tab" aria-selected="true" aria-label="Foto 1"><i></i></button>
+        <div class="hero__bars" role="tablist" aria-label="Escolher foto ou vídeo">
+          <button type="button" role="tab" aria-selected="true" aria-label="Vídeo"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 1"><i></i></button>
           <button type="button" role="tab" aria-selected="false" aria-label="Foto 2"><i></i></button>
           <button type="button" role="tab" aria-selected="false" aria-label="Foto 3"><i></i></button>
         </div>

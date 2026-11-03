@@ -69,13 +69,16 @@ def dims(name):
     return _dims[name]
 
 def img(name, alt, sizes="100vw", extra=""):
-    if "preload" in extra:
+    if "defer" in extra:
+        lazy = 'decoding="async" data-defer'
+    elif "preload" in extra:
         lazy = 'loading="eager" fetchpriority="low"'
     elif "eager" in extra:
         lazy = 'loading="eager" fetchpriority="high"'
     else:
         lazy = 'loading="lazy"'
-    extra = extra.replace("preload", "").replace("eager", "").strip()
+    defer = "defer" in extra
+    extra = extra.replace("defer", "").replace("preload", "").replace("eager", "").strip()
     w, h = dims(name)
     small = os.path.exists(os.path.join(IMG, name + "-sm.webp"))
     if small:
@@ -83,6 +86,10 @@ def img(name, alt, sizes="100vw", extra=""):
         src = f'src="assets/img/{name}-sm.webp" srcset="assets/img/{name}-sm.webp {sw}w, assets/img/{name}.webp {w}w" sizes="{sizes}"'
     else:
         src = f'src="assets/img/{name}.webp"'
+    if defer:  # carrega só depois da página (via JS)
+        src = src.replace('src="', 'data-src="', 1).replace(' srcset="', ' data-srcset="', 1)
+        src = 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" ' + src
+        lazy = ""
     return f'<img {src} alt="{alt}" width="{w}" height="{h}" {lazy} decoding="async" {extra}>'.replace("  ", " ").replace(" >", ">")
 
 def icon(name, cls=""):
@@ -272,6 +279,7 @@ def head(meta):
     desc = meta["description"]
     og = meta.get("og", "hero-corredeira")
     ld = meta.get("jsonld", "")
+    pre = f'<link rel="preload" as="image" href="{meta["preload"]}" fetchpriority="high">' + chr(10) if meta.get("preload") else ""
     return f'''<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -288,7 +296,7 @@ def head(meta):
 <meta property="og:image" content="assets/img/{og}.webp">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+{pre}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css?v={ver("assets/css/style.css")}">
