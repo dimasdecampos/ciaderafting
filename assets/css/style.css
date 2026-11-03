@@ -695,3 +695,21 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Trilhas: comparativo, destaques e ações ---------- */
+.glance { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--line); background: #fff; box-shadow: var(--shadow-sm); }
+.glance table { width: 100%; border-collapse: collapse; min-width: 720px; }
+.glance th, .glance td { padding: 18px 22px; text-align: left; border-bottom: 1px solid var(--line); font-size: .97rem; vertical-align: middle; }
+.glance thead th { background: var(--forest-900); color: #fff; font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; }
+.glance tbody tr:last-child th, .glance tbody tr:last-child td { border-bottom: 0; }
+.glance tbody th { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; font-size: 1.3rem; }
+.glance tbody th a:hover { color: var(--river); }
+.glance tbody tr:hover { background: var(--sand); }
+.glance .level { margin-right: 8px; }
+.see { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+.see li { display: inline-flex; align-items: center; gap: 7px; font-size: .86rem; font-weight: 600; background: var(--sand); padding: 7px 13px; border-radius: 999px; }
+.see .icon { width: 16px; height: 16px; color: var(--river); }
+.trail__note { font-size: .95rem; color: var(--muted); }
+.trail__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.trail { scroll-margin-top: calc(var(--header-h) + 20px); }
+.glance a.link-arrow { font-size: .92rem; }
