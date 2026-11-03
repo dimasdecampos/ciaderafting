@@ -764,23 +764,21 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 }
 
 /* ---------- Mascote vetorizado remando ---------- */
-/* Mascote remando: bote balança, remo faz a remada, ondas correm e espirra água */
+/* Mascote remando: bote balança, remo faz a remada, ondas correm e os respingos pulsam */
 .masc-svg { display: block; width: 100%; height: auto; overflow: visible; }
-.masc-rig { transform-box: view-box; transform-origin: 330px 470px; animation: masc-rock 2.4s ease-in-out infinite; }
+.masc-rig { transform-box: view-box; transform-origin: 370px 420px; animation: masc-rock 2.4s ease-in-out infinite; }
 .masc-paddle { transform-box: view-box; animation: masc-row 2.4s ease-in-out infinite; }
-.masc-wave--front { animation: masc-wave 2.4s linear infinite; }
-.masc-wave--back { animation: masc-wave 3.6s linear infinite reverse; }
-.masc-drop { transform-box: fill-box; transform-origin: center; opacity: 0; animation: masc-drop 2.4s ease-out infinite; animation-delay: calc(var(--d) * 70ms); }
-@keyframes masc-rock { 0%, 100% { transform: translate(0, 0) rotate(-2.5deg); } 50% { transform: translate(8px, -7px) rotate(2deg); } }
-@keyframes masc-row { 0%, 100% { transform: rotate(-7deg); } 45% { transform: rotate(8deg); } }
+.masc-wave--back { animation: masc-wave 3.6s linear infinite; }
+.masc-splash { transform-box: fill-box; animation: masc-splash 2.4s ease-in-out infinite; }
+.masc-splash--l { transform-origin: right center; }
+.masc-splash--r { transform-origin: left center; animation-delay: -.3s; }
+.masc-splash--b { transform-origin: center top; animation-name: masc-splash-b; }
+@keyframes masc-rock { 0%, 100% { transform: translate(0, 0) rotate(-2deg); } 50% { transform: translate(7px, -6px) rotate(1.6deg); } }
+@keyframes masc-row { 0%, 100% { transform: rotate(-6deg); } 45% { transform: rotate(6deg); } }
 @keyframes masc-wave { to { transform: translateX(-160px); } }
-@keyframes masc-drop {
-  0%, 8% { opacity: 0; transform: translate(0, 12px) scale(.3); }
-  18% { opacity: 1; }
-  55% { opacity: 0; transform: translate(calc((var(--d) - 1) * -30px), -52px) scale(1); }
-  100% { opacity: 0; }
-}
-@media (prefers-reduced-motion: reduce) { .masc-rig, .masc-paddle, .masc-wave--front, .masc-wave--back, .masc-drop { animation: none; } }
+@keyframes masc-splash { 0%, 100% { transform: scale(.94); } 50% { transform: scale(1.06); } }
+@keyframes masc-splash-b { 0%, 100% { transform: scale(.9, .85); opacity: .85; } 45% { transform: scale(1.08, 1.12); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .masc-rig, .masc-paddle, .masc-wave--back, .masc-splash { animation: none; } }
 .mascot__art { width: 100%; }
 .mascot__art .masc-svg { filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .18)); }
 @media (max-width: 760px) { .mascot__art { max-width: 260px; } }

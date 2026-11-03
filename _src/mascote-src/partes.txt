@@ -1,1 +1,0 @@
-pivot do remo (viewBox): [403.2, 305.6]
