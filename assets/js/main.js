@@ -267,6 +267,27 @@
     if (reduce) setPaused(true); else schedule();
   })();
 
+
+  /* Logo: remos ao rolar e montagem no rodapé (a entrada é feita no CSS) */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    var headLogo = $(".header__logo"), mark = $("[data-logo-parallax]"), ticking = false;
+    function update() {
+      ticking = false;
+      var y = window.scrollY, vh = window.innerHeight;
+      if (headLogo) headLogo.style.setProperty("--row", Math.sin(y / 110).toFixed(3));
+      if (mark) {
+        var top = mark.getBoundingClientRect().top;
+        var p = Math.max(0, Math.min(1, (vh - top) / (vh * 0.55)));
+        mark.style.setProperty("--p", p.toFixed(3));
+      }
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+
   /* Ano no rodapé */
   $$("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();

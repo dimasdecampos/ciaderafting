@@ -695,3 +695,70 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Logo vetorizado e animado ---------- */
+.logo-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.header__logo { color: inherit; }
+.header__logo .logo-svg { width: 106px; }
+.lg-l, .lg-p, .lg-p > path { transform-box: fill-box; transform-origin: center; }
+
+/* Entrada ao carregar: letras uma a uma, depois os remos.
+   O estilo é sorteado a cada página (atributo data-lg no <html>). */
+.logo-anim { --lg-n: 19; --lg-st: 60ms; --lg-wait: calc(var(--lg-n) * var(--lg-st) + .35s); }
+.logo-anim .lg-l { animation-duration: .55s; animation-fill-mode: both; animation-delay: calc(var(--i) * var(--lg-st) + .15s); }
+.logo-anim .lg-p { animation-duration: .8s; animation-fill-mode: both; animation-timing-function: var(--ease); }
+.logo-anim .lg-p--blue { transform-origin: left center; animation-delay: var(--lg-wait); }
+.logo-anim .lg-p--yellow { animation-delay: calc(var(--lg-wait) + .15s); }
+.logo-anim .lg-p--red { animation-delay: calc(var(--lg-wait) + .3s); }
+
+/* 1 · Queda */
+[data-lg="1"] .logo-anim .lg-l { animation-name: lg-drop; animation-timing-function: cubic-bezier(.2, 1.5, .4, 1); }
+[data-lg="1"] .logo-anim .lg-p--blue { animation-name: lg-wipe; }
+[data-lg="1"] .logo-anim .lg-p--yellow { animation-name: lg-from-right; }
+[data-lg="1"] .logo-anim .lg-p--red { animation-name: lg-from-left; }
+
+/* 2 · Onda (letras saindo da água, remos remando) */
+[data-lg="2"] .logo-anim .lg-l { animation-name: lg-rise; animation-timing-function: ease-out; transform-origin: center bottom; }
+[data-lg="2"] .logo-anim .lg-p--blue { animation-name: lg-wipe; }
+[data-lg="2"] .logo-anim .lg-p--yellow { animation-name: lg-row-r; }
+[data-lg="2"] .logo-anim .lg-p--red { animation-name: lg-row-l; }
+
+/* 3 · Giro */
+[data-lg="3"] .logo-anim .lg-l { animation-name: lg-spin; animation-timing-function: cubic-bezier(.3, 1.4, .5, 1); }
+[data-lg="3"] .logo-anim .lg-p { animation-name: lg-swoosh; animation-duration: .65s; }
+
+/* 4 · Máquina de escrever */
+[data-lg="4"] .logo-anim { --lg-st: 75ms; }
+[data-lg="4"] .logo-anim .lg-l { animation-name: lg-type; animation-duration: .3s; animation-timing-function: ease-out; }
+[data-lg="4"] .logo-anim .lg-p { transform-origin: left center; animation-name: lg-wipe; animation-duration: .45s; }
+
+@keyframes lg-drop { from { transform: translateY(-70%) rotate(-10deg) scale(.5); opacity: 0; } }
+@keyframes lg-rise { 0% { transform: translateY(80%) scaleY(.3); opacity: 0; } 60% { transform: translateY(-12%) scaleY(1.1); opacity: 1; } 100% { transform: none; } }
+@keyframes lg-spin { from { transform: scale(0) rotate(-200deg); opacity: 0; } }
+@keyframes lg-type { 0% { transform: scale(1.5); opacity: 0; } 30% { transform: scale(1.15); opacity: 1; } 100% { transform: none; } }
+@keyframes lg-wipe { from { transform: scaleX(0); } }
+@keyframes lg-from-left { from { transform: translateX(-45%); opacity: 0; } }
+@keyframes lg-from-right { from { transform: translateX(45%); opacity: 0; } }
+@keyframes lg-row-l { 0% { transform: translateX(-35%) rotate(-10deg); opacity: 0; } 70% { transform: translateX(3%) rotate(2deg); opacity: 1; } 100% { transform: none; } }
+@keyframes lg-row-r { 0% { transform: translateX(35%) rotate(10deg); opacity: 0; } 70% { transform: translateX(-3%) rotate(-2deg); opacity: 1; } 100% { transform: none; } }
+@keyframes lg-swoosh { 0% { transform: translateX(-60%) skewX(-30deg); opacity: 0; } 70% { transform: translateX(4%) skewX(8deg); opacity: 1; } 100% { transform: none; } }
+
+/* Remos "remando" ao rolar (cabeçalho) */
+.header__logo .lg-p > path { transition: transform .35s ease-out; }
+.header__logo .lg-red { transform: translateX(calc(var(--row, 0) * 26px)); }
+.header__logo .lg-yellow { transform: translateX(calc(var(--row, 0) * -26px)); }
+.header__logo .lg-blue { transform: translateX(calc(var(--row, 0) * 8px)); }
+
+/* Logo grande do rodapé: monta conforme a rolagem */
+.footer__mark { --p: 1; color: #fff; max-width: 1100px; margin: 0 auto 70px; }
+.footer__mark .lg-red { transform: translateX(calc((1 - var(--p)) * -560px)); }
+.footer__mark .lg-yellow { transform: translateX(calc((1 - var(--p)) * 560px)); }
+.footer__mark .lg-blue { transform-origin: left center; transform: scaleX(calc(.1 + var(--p) * .9)); }
+.footer__mark .lg-l {
+  --lp: clamp(0, calc(var(--p) * 1.8 - var(--i) * .045), 1);
+  opacity: var(--lp);
+  transform: translateY(calc((1 - var(--lp)) * 140px)) rotate(calc((1 - var(--lp)) * -12deg));
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer__mark *, .header__logo .lg-p > path { transform: none !important; opacity: 1 !important; }
+}
