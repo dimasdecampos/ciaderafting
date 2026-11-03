@@ -7,7 +7,13 @@ IMG = os.path.join(ROOT, "assets", "img")
 WA = "5512997031363"
 
 LOGO_SVG = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "logo-src", "logo.svg"), encoding="utf-8").read()
-MASCOTE_REMANDO = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "mascote-src", "mascote-remando.svg"), encoding="utf-8").read()
+MASCOTE_REMANDO = (
+    '<div class="masc2" role="img" aria-label="Mascote Tamanduá-de-colete remando no bote"><div class="masc2__rig">'
+    '<img class="masc2__body" src="assets/img/mascote-camada-corpo.webp" alt="" width="1000" height="719" loading="lazy" decoding="async">'
+    '<img class="masc2__paddle" src="assets/img/mascote-camada-remo.webp" alt="" width="1000" height="719" loading="lazy" decoding="async">'
+    '<img class="masc2__hands" src="assets/img/mascote-camada-maos.webp" alt="" width="1000" height="719" loading="lazy" decoding="async">'
+    '</div></div>'
+)
 LOGO_HEADER = LOGO_SVG.replace('class="logo-svg"', 'class="logo-svg logo-anim"', 1)
 LOGO_FOOTER = LOGO_SVG.replace(' role="img" aria-label="Cia. de Rafting"', ' aria-hidden="true" focusable="false"', 1)
 
