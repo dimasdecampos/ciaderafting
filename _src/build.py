@@ -1,4 +1,4 @@
-import os, re, json, sys
+import os, re, json, sys, hashlib
 from PIL import Image
 
 ROOT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -258,8 +258,12 @@ FOOTER = '''
   <a class="btn btn--ghost" href="tel:+5512997031363">@icon(phone) Ligar</a>
   <a class="btn btn--whats" href="#" data-wa="Olá, Cia. de Rafting! Gostaria de fazer uma reserva.">@icon(whatsapp) Reservar</a>
 </div>
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=@@JSVER@@" defer></script>
 '''
+
+def ver(rel):
+    with open(os.path.join(ROOT, rel), "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
 
 def head(meta):
     title = meta["title"]
@@ -285,7 +289,7 @@ def head(meta):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v={ver("assets/css/style.css")}">
 <script>(function(){{var d=document.documentElement,n=4,v=1+Math.floor(Math.random()*n);try{{var l=+sessionStorage.getItem("lg-last")||0;if(v===l)v=v%n+1;sessionStorage.setItem("lg-last",v)}}catch(e){{}}d.setAttribute("data-lg",v)}})();</script>
 {ld}
 </head>
@@ -297,7 +301,7 @@ def build():
         raw = open(os.path.join(PAGES, f), encoding="utf-8").read()
         first, body = raw.split("\n", 1)
         meta = json.loads(first)
-        html = head(meta) + header(meta.get("active", "")) + '\n<main id="conteudo">\n' + body + "\n</main>\n" + FOOTER.replace("@@LOGO_FOOTER@@", LOGO_FOOTER) + "</body>\n</html>\n"
+        html = head(meta) + header(meta.get("active", "")) + '\n<main id="conteudo">\n' + body + "\n</main>\n" + FOOTER.replace("@@LOGO_FOOTER@@", LOGO_FOOTER).replace("@@JSVER@@", ver("assets/js/main.js")) + "</body>\n</html>\n"
         html = expand(html)
         open(os.path.join(ROOT, f), "w", encoding="utf-8", newline="\n").write(html)
         print("ok", f, len(html))
