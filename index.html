@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=f06ad731">
+<link rel="stylesheet" href="assets/css/style.css?v=cf4014c2">
 <script>(function(){var d=document.documentElement,n=4,v=1+Math.floor(Math.random()*n);try{var l=+sessionStorage.getItem("lg-last")||0;if(v===l)v=v%n+1;sessionStorage.setItem("lg-last",v)}catch(e){}d.setAttribute("data-lg",v)})();</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TouristAttraction","name":"Cia. de Rafting","description":"Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar desde 1996.","url":"https://www.ciaderafting.com/","telephone":"+55-12-99703-1363","email":"contato@ciaderafting.com.br","foundingDate":"1996","address":{"@type":"PostalAddress","streetAddress":"Rodovia Dr. Oswaldo Cruz, km 66,5 - Sítio Água","addressLocality":"São Luiz do Paraitinga","addressRegion":"SP","postalCode":"12140-000","addressCountry":"BR"},"sameAs":["https://www.instagram.com/ciaderafting/","https://www.facebook.com/Ciaderafting"]}</script>
 </head>
@@ -189,6 +189,71 @@
     <div class="trust__item"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg><div><b>Serra do Mar</b><small>Mata Atlântica, Patrimônio da Humanidade</small></div></div>
   </div>
 </div>
+
+<section class="section section--sand vagas" id="vagas">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Agenda ao vivo</span>
+        <h2 class="display h2">Veja as <span class="hl">vagas</span> antes de reservar</h2>
+        <p class="lead">Escolha a aventura e o tamanho do grupo. O calendário mostra na hora quais datas cabem todo mundo e como vocês se dividem nos botes.</p>
+      </div>
+    </div>
+    <div class="vg reveal" data-vagas>
+      <div class="vg__side">
+        <div>
+          <span class="vg__label"><svg class="icon" aria-hidden="true"><use href="#i-paddle"/></svg> Atividade</span>
+          <div class="vg-acts" role="group" aria-label="Escolha a atividade">
+            <button type="button" class="vg-act" data-act="r4" aria-pressed="false">Rafting <small>4h</small></button>
+            <button type="button" class="vg-act" data-act="r6" aria-pressed="true">Rafting <small>6h</small></button>
+            <button type="button" class="vg-act" data-act="tr" aria-pressed="false">Trilhas</button>
+            <button type="button" class="vg-act" data-act="cu" aria-pressed="false">Curso</button>
+          </div>
+          <div class="vg-trail" data-vg-trail hidden>
+            <select aria-label="Qual trilha">
+              <option>Trilha das Pirapitingas</option>
+              <option>Trilha do Poço do Pito</option>
+              <option>Trilha do Corcovado</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <span class="vg__label" id="vg-n-l"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg> Quantas pessoas</span>
+          <div class="vg-group">
+            <div class="vg-step" role="group" aria-labelledby="vg-n-l">
+              <button type="button" data-vg-step="-1" aria-label="Menos uma pessoa">−</button>
+              <output data-vg-n aria-live="polite">4</output>
+              <button type="button" data-vg-step="1" aria-label="Mais uma pessoa">+</button>
+            </div>
+            <p class="vg-group__info" data-vg-info></p>
+          </div>
+        </div>
+        <div class="vg-river" data-vg-fleet aria-live="polite"></div>
+        <div class="vg-sum" data-vg-sum></div>
+      </div>
+      <div class="vg__cal">
+        <div class="vg-cal__head">
+          <button type="button" class="vg-nav" data-vg-prev aria-label="Mês anterior"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <h3 class="display vg-cal__title" data-vg-title></h3>
+          <button type="button" class="vg-nav" data-vg-next aria-label="Próximo mês"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+        <div class="vg-week" aria-hidden="true"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+        <div class="vg-grid" data-vg-grid></div>
+        <div class="vg-legend">
+          <span><i class="sw sw--ok"></i>Bastante vaga</span>
+          <span><i class="sw sw--few"></i>Últimas vagas</span>
+          <span><i class="sw sw--full"></i>Não cabe o grupo</span>
+          <span><i class="sw sw--pip"></i>Barrinhas = botes (amarelo = vocês)</span>
+        </div>
+        <div class="vg-soon">
+          <span class="vg-soon__t" data-vg-soon-t>Próximas datas com vaga</span>
+          <div class="vg-soon__list" data-vg-soon></div>
+        </div>
+      </div>
+    </div>
+    <p class="vg-demo">Demonstração com ocupação simulada. Na versão final as vagas vêm direto da agenda da equipe.</p>
+  </div>
+</section>
 
 <section class="section" id="aventuras">
   <div class="container">
@@ -518,6 +583,6 @@
   <a class="btn btn--ghost" href="tel:+5512997031363"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Ligar</a>
   <a class="btn btn--whats" href="#" data-wa="Olá, Cia. de Rafting! Gostaria de fazer uma reserva."><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Reservar</a>
 </div>
-<script src="assets/js/main.js?v=d9871f68" defer></script>
+<script src="assets/js/main.js?v=7694b61b" defer></script>
 </body>
 </html>

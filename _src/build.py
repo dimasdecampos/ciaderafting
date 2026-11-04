@@ -14,6 +14,16 @@ MASCOTE_REMANDO = (
     '<img class="masc2__hands" src="assets/img/mascote-camada-maos.webp" alt="" width="1000" height="719" loading="lazy" decoding="async">'
     '</div></div>'
 )
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location("rig", os.path.join(os.path.dirname(os.path.abspath(__file__)), "mascote-src", "rig.py"))
+RIG = _ilu.module_from_spec(_spec); _spec.loader.exec_module(RIG)
+_MT_N = [0]
+
+def mascote(pose, label="Mascote Tamanduá-de-colete"):
+    """Boneco vetorial do mascote numa pose (ver _src/mascote-src/rig.py)."""
+    _MT_N[0] += 1
+    return RIG.render(pose, uid=f"mt{_MT_N[0]}", label=label)
+
 LOGO_HEADER = LOGO_SVG.replace('class="logo-svg"', 'class="logo-svg logo-anim"', 1)
 LOGO_FOOTER = LOGO_SVG.replace(' role="img" aria-label="Cia. de Rafting"', ' aria-hidden="true" focusable="false"', 1)
 
@@ -120,6 +130,7 @@ def expand(s):
     s = s.replace("@@MASCOTE_REMANDO@@", MASCOTE_REMANDO)
     s = _macro(s, "g", lambda a: f'<a href="assets/img/{a[0]}.webp">' + img(a[0], a[1], "(max-width: 700px) 100vw, 25vw") + '</a>')
     s = _macro(s, "img", lambda a: img(a[0], a[1], a[2] if len(a) > 2 and a[2] else "100vw", a[3] if len(a) > 3 else ""))
+    s = _macro(s, "mascote", lambda a: mascote(a[0], a[1] if len(a) > 1 else "Mascote Tamanduá-de-colete"))
     s = _macro(s, "icon", lambda a: icon(a[0], a[1] if len(a) > 1 else ""))
     return s
 
