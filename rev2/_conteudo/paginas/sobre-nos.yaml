@@ -1,6 +1,5 @@
 titulo_aba: Sobre Nós | Cia de Rafting | Brasil
-descricao: Fundada em 1996, a Cia de Rafting é uma das cinco primeiras
-  operadoras de rafting comercial do Brasil. História, missão, visão e valores.
+descricao: Fundada em 1996, a Cia de Rafting é uma das cinco primeiras operadoras de rafting comercial do Brasil. História, missão, visão e valores.
 banner:
   imagem: /rev2/assets/img/grupo-rio.webp
   alt: Grupo com vários botes reunidos no rio
@@ -10,46 +9,29 @@ blocos:
   - tipo: titulo
     titulo: História
   - tipo: texto
-    texto: >-
-      Fundada em 1996, a Cia de Rafting é uma das cinco primeiras operadoras de
-      Rafting Comercial do Brasil, responsável pela implantação das operações na
-      Bacia do Rio Paraibuna, na região do Vale do Paraíba, no Estado de São
-      Paulo, que abrangem os municípios de São Luiz do Paraitinga, importante
-      centro cultural e arquitetônico, e Natividade da Serra, situados a 180 km
-      de São Paulo. TESTE-PAINEL
+    texto: |-
+      Fundada em 1996, a Cia de Rafting é uma das cinco primeiras operadoras de Rafting Comercial do Brasil, responsável pela implantação das operações na Bacia do Rio Paraibuna, na região do Vale do Paraíba, no Estado de São Paulo, que abrangem os municípios de São Luiz do Paraitinga, importante centro cultural e arquitetônico, e Natividade da Serra, situados a 180 km de São Paulo.
 
-
-      Composta por colaboradores com formações técnicas, acadêmicas e ensino
-      médio, com certificação na IRF – International Rafting Federation e nas
-      NBR (Normas Brasileiras de Referência) ABNT, desenvolvemos nossas
-      atividades de turismo de aventura em conformidade com a legislação
-      aplicável e as boas práticas já consagradas em nosso meio.
+      Composta por colaboradores com formações técnicas, acadêmicas e ensino médio, com certificação na IRF – International Rafting Federation e nas NBR (Normas Brasileiras de Referência) ABNT, desenvolvemos nossas atividades de turismo de aventura em conformidade com a legislação aplicável e as boas práticas já consagradas em nosso meio.
   - tipo: missao
     itens:
       - titulo: Missão
-        texto: Conectar pessoas à natureza através de nossos serviços no mais alto grau
-          de espírito de aventura.
+        texto: Conectar pessoas à natureza através de nossos serviços no mais alto grau de espírito de aventura.
       - titulo: Visão
-        texto: Acreditamos que as atividades de aventura praticadas ao ar livre são
-          ferramentas que permitem estimular mudanças fantásticas nas pessoas e
-          no seu entorno. Desta forma, é nosso dever criar os meios que
-          possibilitem o acesso de todos a estas experiências.
+        texto: Acreditamos que as atividades de aventura praticadas ao ar livre são ferramentas que permitem estimular mudanças fantásticas nas pessoas e no seu entorno. Desta forma, é nosso dever criar os meios que possibilitem o acesso de todos a estas experiências.
       - titulo: Valores
         texto: Honestidade, legalidade, responsabilidade, planejamento e segurança.
   - tipo: caixa
     estilo: azul
-    titulo: Certificado ABNT NBR ISO 21101:2014
-    texto: Sistema de Gestão da Segurança para turismo de aventura — atividade de
-      rafting no Rio Paraibuna, zona de amortecimento do Parque Estadual da
-      Serra do Mar, Núcleo Santa Virgínia. Certificação voluntária, válida de
-      08/10/2025 a 08/10/2026.
     selo: ISO 21101
+    titulo: Certificado ABNT NBR ISO 21101:2014
+    texto: Sistema de Gestão da Segurança para turismo de aventura — atividade de rafting no Rio Paraibuna, zona de amortecimento do Parque Estadual da Serra do Mar, Núcleo Santa Virgínia. Certificação voluntária, válida de 08/10/2025 a 08/10/2026.
   - tipo: botoes
     itens:
       - texto: Política de segurança
+        link: politica-de-seguranca.html
         estilo: azul
         icone: seta
-        link: politica-de-seguranca.html
       - texto: Nossa equipe
-        estilo: linha
         link: nossa-equipe.html
+        estilo: linha
