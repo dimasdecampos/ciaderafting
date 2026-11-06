@@ -1,0 +1,31 @@
+titulo_aba: Cia de Rafting | Rafting SP | São Luiz do Paraitinga – SP, Brasil
+descricao: Rafting no Rio Paraibuna, trilhas na Serra do Mar e curso de rafting em São Luiz do Paraitinga – SP. Desde 1996, com segurança certificada ISO 21.101.
+hero:
+  imagem: /rev2/assets/img/hero-corredeira.webp
+  alt: Bote de rafting enfrentando a corredeira no Rio Paraibuna
+blocos:
+  - tipo: cabecalho
+    titulo: Cia. de Rafting
+    subtitulo: Rafting, trilhas e educação na Mata Atlântica desde 1996
+  - tipo: cartoes
+    itens:
+      - imagem: /rev2/assets/img/rafting-comemoracao.webp
+        alt: Grupo comemorando no bote
+        titulo: Expedição de rafting 4 horas
+        texto: Brazadão · Rio Paraibuna, Natividade da Serra
+        link: expedicao-de-rafting-4-horas-brazadao.html
+      - imagem: /rev2/assets/img/corredeira-cachoeira.webp
+        alt: Bote descendo corredeira forte
+        titulo: Expedição de rafting 6 horas
+        texto: Núcleo Santa Virgínia · Classes II, III e IV
+        link: expedicao-de-rafting-6-horas-nucleo.html
+      - imagem: /rev2/assets/img/trilha-grupo.webp
+        alt: Grupo caminhando na trilha
+        titulo: Trilhas
+        texto: Parque Estadual da Serra do Mar · Núcleo Santa Virgínia
+        link: trilhas.html
+      - imagem: /rev2/assets/img/curso-vira-bote.webp
+        alt: Treino de virar o bote no curso
+        titulo: Curso de rafting
+        texto: Aprendizado nos rios da Serra do Mar · 48 horas/aula
+        link: curso-de-rafting.html

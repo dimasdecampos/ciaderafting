@@ -1,9 +1,12 @@
 # Cia. de Rafting — novo site
 
-Recriação do site da Cia. de Rafting (São Luiz do Paraitinga – SP) em HTML, CSS e JavaScript puros, sem dependências de build.
+A página principal (`index.html`) é um índice com atalhos para cada revisão. Cada pasta é um site completo e independente:
 
-- Páginas: `index.html`, `rafting-4-horas.html`, `rafting-6-horas.html`, `trilhas.html`, `curso-de-rafting.html`, `sobre.html`, `destino.html`, `contato.html`
-- Estilos: `assets/css/style.css` · Scripts: `assets/js/main.js` · Imagens: `assets/img/`
-- Reservas e contato abrem o WhatsApp (+55 12 99703-1363) com mensagem pronta.
+- `rev0/` — primeira versão: tema escuro, página única (home longa).
+- `rev1/` — mesma estrutura da rev0 com visual claro e sóbrio.
+- `rev2/` — fiel ao site original do Wix: 12 páginas, mesmo menu e textos, modernizada e responsiva, com painel de edição (Pages CMS; ver `rev2/GUIA-DE-EDICAO.md`).
+- `_capas/` — miniaturas usadas no índice.
+
+Para gerar as páginas de uma revisão de novo: `cd revN && python _src/build.py` (a rev2 precisa de `pip install pillow pyyaml markdown`).
 
 Para ver localmente: `python -m http.server 8000` e abrir http://localhost:8000

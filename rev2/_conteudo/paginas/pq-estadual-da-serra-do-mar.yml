@@ -1,0 +1,50 @@
+titulo_aba: Pq. Estadual da Serra do Mar | Cia de Rafting
+descricao: "Parque Estadual da Serra do Mar: zona de amortecimento e Núcleo Santa Virgínia, onde a Cia de Rafting concentra suas operações na Mata Atlântica."
+banner:
+  imagem: /rev2/assets/img/rio-paraibuna-mata.webp
+  alt: Rio Paraibuna cercado pela Mata Atlântica
+blocos:
+  - tipo: cabecalho
+    titulo: Parque Estadual da Serra do Mar
+    subtitulo: Zona de amortecimento e Núcleo Santa Virgínia
+  - tipo: texto
+    texto: |-
+      Parque Estadual é uma área delimitada, dotada de atributos naturais excepcionais, objeto de preservação permanente. Os Parques Estaduais destinam-se a fins científicos, culturais, educativos e recreativos, constituindo-se bens do Estado destinados ao uso do povo. O objetivo principal de um Parque Estadual é a preservação dos ecossistemas e da diversidade genética.
+
+      Protegendo os remanescentes de Mata Atlântica, declarados pela UNESCO como Patrimônio da Humanidade, o Parque Estadual da Serra do Mar se espalha por uma área de 310 mil hectares, da divisa de São Paulo com o Rio de Janeiro até o município de Itariri, no sul do Estado, passando por toda a faixa litorânea e representando a maior porção contínua preservada deste ecossistema no Brasil. Para administrar tamanha área, o Parque, que integra a rede de Unidades de Conservação administradas pela Secretaria do Meio Ambiente de São Paulo através do Instituto Florestal, foi dividido em núcleos administrativos, dos quais fazem parte os Núcleos Santa Virgínia, Cunha, Picinguaba, São Sebastião e Caraguatatuba.
+  - tipo: caixa
+    estilo: azul
+    texto: É na **Zona de Amortecimento do Núcleo Santa Virgínia** — área que não compreende domínio do Parque — que está concentrada a maioria das operações da Cia de Rafting, desenvolvidas visando a utilização sustentada dos atrativos desta zona, que fica imediatamente ao lado do Parque. Estas operações também colaboram, de maneira gratuita, com a fiscalização e a educação ambiental dos nossos passageiros, ajudando assim na preservação.
+  - tipo: texto
+    texto: "No interior do Parque existe o apoio à Educação Ambiental e ao Ecoturismo, que vem se intensificando a cada ano: a manutenção das trilhas de visitação, as pesquisas e a melhoria da informação visual com placas indicativas para orientação dos visitantes são alguns dos resultados deste apoio no Núcleo Santa Virgínia."
+  - tipo: titulo
+    titulo: Mata Atlântica
+  - tipo: texto
+    texto: Bioma brasileiro situado principalmente nas cadeias montanhosas junto ao mar, mas também encontrado em trechos do interior. Sua área estendia-se do Rio Grande do Sul ao Rio Grande do Norte, e vem perdendo espaço para a ocupação humana desde 1500. As maiores áreas preservadas estão na Serra do Mar e na Serra da Mantiqueira (SP, RJ, MG, ES). É enquadrada como floresta tropical e mais de 50% de suas árvores são endêmicas (só ocorrem neste local), o que a transforma na floresta de maior diversidade do globo, com diversidade de fauna e flora inclusive maior que a da Amazônia. Esta diversidade se deve à variedade de ambientes, ao relevo que favorece as chuvas, ao solo rico e à reciclagem de nutrientes extremamente rápida. Recentemente, a Floresta Atlântica foi declarada pela UNESCO reserva da biosfera. Sua idade é de 4 milhões de anos.
+  - tipo: titulo
+    titulo: Fauna e flora
+  - tipo: texto
+    texto: "**Mamíferos:**"
+  - tipo: etiquetas
+    itens: [gambá, cutia, capivara, cateto, queixada, veado-mateiro, anta, lontra, irara, quati, mão-pelada, gato-do-mato, jaguatirica, suçuarana, onça-pintada, bugio]
+  - tipo: texto
+    texto: |-
+      **Aves silvestres:** periquito, coruja, gavião-pomba, papagaio-chauá, entre outras.
+
+      **Vegetação:** vegetação exuberante, destacando-se jequitibás, jataís, cedros, ipês, guapuruvus, palmeiras, quaresmeiras, manacás e grande variedade de bromélias e orquídeas, que emprestam à Serra do Mar beleza ímpar com suas flores. E ainda raízes e folhas medicinais, pesquisadas para a cura de doenças.
+  - tipo: titulo
+    titulo: Endemismo
+  - tipo: barras
+    itens:
+      - rotulo: Espécies de árvores
+        valor: 52
+      - rotulo: Outros vegetais
+        valor: 74
+      - rotulo: Mamíferos
+        valor: 30
+  - tipo: texto
+    texto: Além de borboletas, répteis e anfíbios.
+  - tipo: titulo
+    titulo: Uso da floresta
+  - tipo: etiquetas
+    itens: [Proteção da água, Proteção da biodiversidade, Turismo ambiental, Produção de madeiras e derivados através de manejo sustentado]

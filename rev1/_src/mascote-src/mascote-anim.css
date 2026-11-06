@@ -1,0 +1,15 @@
+/* Mascote remando: bote balança, remo faz a remada, ondas correm e os respingos pulsam */
+.masc-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.masc-rig { transform-box: view-box; transform-origin: 370px 420px; animation: masc-rock 2.4s ease-in-out infinite; }
+.masc-paddle { transform-box: view-box; animation: masc-row 2.4s ease-in-out infinite; }
+.masc-wave--back { animation: masc-wave 3.6s linear infinite; }
+.masc-splash { transform-box: fill-box; animation: masc-splash 2.4s ease-in-out infinite; }
+.masc-splash--l { transform-origin: right center; }
+.masc-splash--r { transform-origin: left center; animation-delay: -.3s; }
+.masc-splash--b { transform-origin: center top; animation-name: masc-splash-b; }
+@keyframes masc-rock { 0%, 100% { transform: translate(0, 0) rotate(-2deg); } 50% { transform: translate(7px, -6px) rotate(1.6deg); } }
+@keyframes masc-row { 0%, 100% { transform: rotate(-6deg); } 45% { transform: rotate(6deg); } }
+@keyframes masc-wave { to { transform: translateX(-160px); } }
+@keyframes masc-splash { 0%, 100% { transform: scale(.94); } 50% { transform: scale(1.06); } }
+@keyframes masc-splash-b { 0%, 100% { transform: scale(.9, .85); opacity: .85; } 45% { transform: scale(1.08, 1.12); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .masc-rig, .masc-paddle, .masc-wave--back, .masc-splash { animation: none; } }

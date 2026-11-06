@@ -1,0 +1,415 @@
+{"title": "Cia. de Rafting · Rafting e trilhas na Mata Atlântica · São Luiz do Paraitinga – SP", "description": "Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar. Desde 1996, com segurança certificada ISO 21.101. Reserve pelo WhatsApp.", "active": "index", "preload": "assets/video/rafting-hero-poster.webp", "jsonld": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"TouristAttraction\",\"name\":\"Cia. de Rafting\",\"description\":\"Rafting no Rio Paraibuna e trilhas no Parque Estadual da Serra do Mar desde 1996.\",\"url\":\"https://www.ciaderafting.com/\",\"telephone\":\"+55-12-99703-1363\",\"email\":\"contato@ciaderafting.com.br\",\"foundingDate\":\"1996\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Rodovia Dr. Oswaldo Cruz, km 66,5 - Sítio Água\",\"addressLocality\":\"São Luiz do Paraitinga\",\"addressRegion\":\"SP\",\"postalCode\":\"12140-000\",\"addressCountry\":\"BR\"},\"sameAs\":[\"https://www.instagram.com/ciaderafting/\",\"https://www.facebook.com/Ciaderafting\"]}</script>"}
+<section class="hero">
+  <div class="hero__media" id="hero-slides" aria-roledescription="carrossel" aria-label="Fotos e vídeo da Cia. de Rafting">
+    <div class="hero__slide hero__slide--video is-active" data-duration="8000">
+      <img src="assets/video/rafting-hero-poster.webp" alt="Descida de rafting em primeira pessoa, com remo e respingos de água" width="1280" height="720" fetchpriority="high" decoding="async">
+      <video class="hero__video" muted playsinline preload="none" aria-hidden="true" tabindex="-1" data-src-desktop="assets/video/rafting-hero-720.mp4" data-src-mobile="assets/video/rafting-hero-480.mp4"></video>
+    </div>
+    <div class="hero__slide">@img(hero-corredeira|Bote da Cia. de Rafting atravessando uma corredeira no Rio Paraibuna|100vw|defer)</div>
+    <div class="hero__slide">@img(corredeira-cachoeira|Bote descendo uma corredeira forte entre pedras na Serra do Mar|100vw|defer)</div>
+    <div class="hero__slide">@img(rafting-comemoracao|Grupo comemorando com remos para o alto no bote|100vw|defer)</div>
+  </div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__kicker"><b>30 ANOS</b> Desde 1996 nas corredeiras do Rio Paraibuna</span>
+      <h1 class="display h1">Rafting na <em>Mata Atlântica</em></h1>
+      <p>Expedições de rafting e trilhas na Serra do Mar, em São Luiz do Paraitinga – SP. Uma das cinco primeiras operadoras de rafting comercial do Brasil, com segurança certificada ISO 21.101.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#aventuras">Escolher minha aventura @icon(arrow|icon--arrow)</a>
+        <a class="btn btn--ghost" href="#" data-wa="Olá, Cia. de Rafting! Quero saber mais sobre o rafting.">@icon(whatsapp) Falar no WhatsApp</a>
+      </div>
+      <div class="hero__ctrl" role="group" aria-label="Controles do carrossel">
+        <button type="button" class="hero__arrow" data-hero="prev" aria-label="Foto anterior">@icon(chevron-left)</button>
+        <div class="hero__bars" role="tablist" aria-label="Escolher foto ou vídeo">
+          <button type="button" role="tab" aria-selected="true" aria-label="Vídeo"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 1"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 2"><i></i></button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Foto 3"><i></i></button>
+        </div>
+        <button type="button" class="hero__arrow" data-hero="next" aria-label="Próxima foto">@icon(chevron-right)</button>
+        <button type="button" class="hero__arrow hero__pause" data-hero="pause" aria-label="Pausar apresentação" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path class="p-pause" d="M8 5v14M16 5v14"/><path class="p-play" d="M7 4v16l13-8z"/></svg></button>
+      </div>
+    </div>
+    <form class="booking" id="booking" aria-label="Verificar disponibilidade">
+      <div class="booking__field">
+        <label for="b-atividade">@icon(paddle) Atividade</label>
+        <select id="b-atividade" name="atividade">
+          <option>Rafting 4 horas · Brazadão</option>
+          <option>Rafting 6 horas · Núcleo Santa Virgínia</option>
+          <option>Trilha das Pirapitingas</option>
+          <option>Trilha do Poço do Pito</option>
+          <option>Trilha do Corcovado</option>
+          <option>Curso de Rafting</option>
+        </select>
+      </div>
+      <div class="booking__field">
+        <label for="b-data">@icon(calendar) Data</label>
+        <input id="b-data" name="data" type="date">
+      </div>
+      <div class="booking__field">
+        <label id="b-pessoas-l">@icon(users) Pessoas</label>
+        <div class="stepper" role="group" aria-labelledby="b-pessoas-l">
+          <button type="button" data-step="-1" aria-label="Menos uma pessoa">−</button>
+          <output aria-live="polite">2</output>
+          <input type="hidden" name="pessoas" value="2">
+          <button type="button" data-step="1" aria-label="Mais uma pessoa">+</button>
+        </div>
+      </div>
+      <button class="btn btn--red" type="submit">Ver disponibilidade @icon(arrow|icon--arrow)</button>
+      <div class="booking__note">
+        <span>@icon(check) Resposta direta com a equipe</span>
+        <span>@icon(shield) Seguro incluso nas atividades</span>
+        <span>@icon(award) Guias habilitados ABNT NBR 15.370</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust__row">
+    <div class="trust__item">@icon(shield)<div><b>ISO 21.101</b><small>Gestão da segurança certificada</small></div></div>
+    <div class="trust__item">@icon(award)<div><b>ABNT NBR 15.370</b><small>Condutores de rafting habilitados</small></div></div>
+    <div class="trust__item">@icon(compass)<div><b>Certificação IRF</b><small>International Rafting Federation</small></div></div>
+    <div class="trust__item">@icon(file)<div><b>CADASTUR</b><small>Registro no Ministério do Turismo</small></div></div>
+    <div class="trust__item">@icon(leaf)<div><b>Serra do Mar</b><small>Mata Atlântica, Patrimônio da Humanidade</small></div></div>
+  </div>
+</div>
+
+<section class="section section--sand vagas" id="vagas">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Agenda ao vivo</span>
+        <h2 class="display h2">Veja as <span class="hl">vagas</span> antes de reservar</h2>
+        <p class="lead">Escolha a aventura e o tamanho do grupo. O calendário mostra na hora quais datas cabem todo mundo e como vocês se dividem nos botes.</p>
+      </div>
+    </div>
+    <div class="vg reveal" data-vagas>
+      <div class="vg__side">
+        <div>
+          <span class="vg__label">@icon(paddle) Atividade</span>
+          <div class="vg-acts" role="group" aria-label="Escolha a atividade">
+            <button type="button" class="vg-act" data-act="r4" aria-pressed="false">Rafting <small>4h</small></button>
+            <button type="button" class="vg-act" data-act="r6" aria-pressed="true">Rafting <small>6h</small></button>
+            <button type="button" class="vg-act" data-act="tr" aria-pressed="false">Trilhas</button>
+            <button type="button" class="vg-act" data-act="cu" aria-pressed="false">Curso</button>
+          </div>
+          <div class="vg-trail" data-vg-trail hidden>
+            <select aria-label="Qual trilha">
+              <option>Trilha das Pirapitingas</option>
+              <option>Trilha do Poço do Pito</option>
+              <option>Trilha do Corcovado</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <span class="vg__label" id="vg-n-l">@icon(users) Quantas pessoas</span>
+          <div class="vg-group">
+            <div class="vg-step" role="group" aria-labelledby="vg-n-l">
+              <button type="button" data-vg-step="-1" aria-label="Menos uma pessoa">−</button>
+              <output data-vg-n aria-live="polite">4</output>
+              <button type="button" data-vg-step="1" aria-label="Mais uma pessoa">+</button>
+            </div>
+            <p class="vg-group__info" data-vg-info></p>
+          </div>
+        </div>
+        <div class="vg-river" data-vg-fleet aria-live="polite"></div>
+        <div class="vg-sum" data-vg-sum></div>
+      </div>
+      <div class="vg__cal">
+        <div class="vg-cal__head">
+          <button type="button" class="vg-nav" data-vg-prev aria-label="Mês anterior">@icon(chevron-left)</button>
+          <h3 class="display vg-cal__title" data-vg-title></h3>
+          <button type="button" class="vg-nav" data-vg-next aria-label="Próximo mês">@icon(chevron-right)</button>
+        </div>
+        <div class="vg-week" aria-hidden="true"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+        <div class="vg-grid" data-vg-grid></div>
+        <div class="vg-legend">
+          <span><i class="sw sw--ok"></i>Bastante vaga</span>
+          <span><i class="sw sw--few"></i>Últimas vagas</span>
+          <span><i class="sw sw--full"></i>Não cabe o grupo</span>
+          <span><i class="sw sw--pip"></i>Barrinhas = botes (amarelo = vocês)</span>
+        </div>
+        <div class="vg-soon">
+          <span class="vg-soon__t" data-vg-soon-t>Próximas datas com vaga</span>
+          <div class="vg-soon__list" data-vg-soon></div>
+        </div>
+      </div>
+    </div>
+    <p class="vg-demo">Demonstração com ocupação simulada. Na versão final as vagas vêm direto da agenda da equipe.</p>
+  </div>
+</section>
+
+<section class="section" id="aventuras">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Nossas aventuras</span>
+        <h2 class="display h2">Escolha seu <span class="hl">rio</span>, sua trilha, seu ritmo</h2>
+        <p class="lead">Do primeiro contato com as corredeiras até a formação de novos guias: tudo dentro da Mata Atlântica preservada da Serra do Mar.</p>
+      </div>
+      <div class="chips reveal" data-filter-group="#trip-grid" role="group" aria-label="Filtrar atividades">
+        <button class="chip" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="chip" data-filter="rafting" aria-pressed="false">Rafting</button>
+        <button class="chip" data-filter="trilha" aria-pressed="false">Trilhas</button>
+        <button class="chip" data-filter="curso" aria-pressed="false">Cursos</button>
+      </div>
+    </div>
+
+    <div class="trips" id="trip-grid">
+      <article class="trip reveal" data-cat="rafting">
+        <div class="trip__media">@img(rafting-comemoracao|Grupo com remos para cima comemorando no bote|(max-width: 620px) 100vw, (max-width: 1160px) 50vw, 25vw)<span class="trip__tag">Rafting</span></div>
+        <div class="trip__body">
+          <h3 class="trip__title"><a href="rafting-4-horas.html">Rafting 4h · Brazadão</a></h3>
+          <p class="trip__desc">Corredeiras do Rio Paraibuna com parada para lanche nas águas transparentes da Praia do Funilzão.</p>
+          <div class="facts"><span class="fact">@icon(clock) ≈ 4h de rio</span><span class="fact">@icon(pin) Natividade da Serra</span></div>
+          <div class="trip__foot"><div class="trip__price"><small>Valores</small><b>Sob consulta</b></div><span class="trip__go">@icon(arrow-up-right)</span></div>
+        </div>
+      </article>
+      <article class="trip reveal reveal-d1" data-cat="rafting">
+        <div class="trip__media">@img(corredeira-cachoeira|Bote descendo uma corredeira forte entre pedras|(max-width: 620px) 100vw, (max-width: 1160px) 50vw, 25vw)<span class="trip__tag">Rafting</span><span class="trip__badge">Classe II–IV</span></div>
+        <div class="trip__body">
+          <h3 class="trip__title"><a href="rafting-6-horas.html">Rafting 6h · Núcleo</a></h3>
+          <p class="trip__desc">A expedição completa: corredeiras de até classe IV na zona de amortecimento do Parque Estadual da Serra do Mar.</p>
+          <div class="facts"><span class="fact">@icon(clock) ≈ 6h</span><span class="fact">@icon(waves) <span class="level" aria-label="Nível 4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span></div>
+          <div class="trip__foot"><div class="trip__price"><small>Valores</small><b>Sob consulta</b></div><span class="trip__go">@icon(arrow-up-right)</span></div>
+        </div>
+      </article>
+      <article class="trip reveal reveal-d2" data-cat="trilha">
+        <div class="trip__media">@img(trilha-grupo|Grupo sorrindo em trilha na Mata Atlântica|(max-width: 620px) 100vw, (max-width: 1160px) 50vw, 25vw)<span class="trip__tag">Trilhas</span></div>
+        <div class="trip__body">
+          <h3 class="trip__title"><a href="trilhas.html">Trilhas na Serra do Mar</a></h3>
+          <p class="trip__desc">Três roteiros guiados entre cachoeiras e mirantes no Núcleo Santa Virgínia — dos 8 aos 80 anos.</p>
+          <div class="facts"><span class="fact">@icon(route) 5 a 17 km</span><span class="fact">@icon(users) a partir de 10 anos</span></div>
+          <div class="trip__foot"><div class="trip__price"><small>Valores</small><b>Sob consulta</b></div><span class="trip__go">@icon(arrow-up-right)</span></div>
+        </div>
+      </article>
+      <article class="trip reveal reveal-d3" data-cat="curso">
+        <div class="trip__media">@img(curso-vira-bote|Alunos treinando a manobra de desvirar o bote|(max-width: 620px) 100vw, (max-width: 1160px) 50vw, 25vw)<span class="trip__tag">Educação</span><span class="trip__badge">Certificado</span></div>
+        <div class="trip__body">
+          <h3 class="trip__title"><a href="curso-de-rafting.html">Curso de Rafting</a></h3>
+          <p class="trip__desc">Formação básica com teoria e prática na Corredeira dos Bancos, a “corredeira escola” do Paraibuna.</p>
+          <div class="facts"><span class="fact">@icon(calendar) 6 dias</span><span class="fact">@icon(book) 48 h/aula</span></div>
+          <div class="trip__foot"><div class="trip__price"><small>A partir de</small><b>10× R$ 139,90</b></div><span class="trip__go">@icon(arrow-up-right)</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Rio Paraibuna</span><span>Mata Atlântica</span><span>Serra do Mar</span><span>São Luiz do Paraitinga</span><span>Desde 1996</span><span>ISO 21.101</span>
+    <span>Rio Paraibuna</span><span>Mata Atlântica</span><span>Serra do Mar</span><span>São Luiz do Paraitinga</span><span>Desde 1996</span><span>ISO 21.101</span>
+  </div>
+</div>
+
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head center">
+      <div class="reveal">
+        <span class="eyebrow">Compare</span>
+        <h2 class="display h2">Qual rafting é pra você?</h2>
+        <p class="lead">As duas expedições descem o Rio Paraibuna, com bote, equipamentos, guias habilitados e seguro inclusos. A diferença está no trecho e no tempo de rio.</p>
+      </div>
+    </div>
+    <div class="compare">
+      <div class="compare__card reveal">
+        <span class="eyebrow">Brazadão</span>
+        <h3 class="display h3">Expedição 4 horas</h3>
+        <p>Para quem quer viver o rio em meio período, com uma pausa para lanche e banho de rio.</p>
+        <div class="compare__row"><span>Tempo de rio</span><b>≈ 4 horas</b></div>
+        <div class="compare__row"><span>Percurso</span><b>Rio Paraibuna · Natividade da Serra</b></div>
+        <div class="compare__row"><span>Ponto de encontro</span><b>Complexo Manacá da Serra · km 59</b></div>
+        <div class="compare__row"><span>Chegada até</span><b>08h00</b></div>
+        <div class="compare__row"><span>Destaque</span><b>Lanche na Praia do Funilzão</b></div>
+        <a class="btn btn--dark btn--block" href="rafting-4-horas.html">Ver detalhes @icon(arrow|icon--arrow)</a>
+      </div>
+      <div class="compare__card compare__card--featured reveal reveal-d1">
+        <span class="compare__ribbon">Expedição completa</span>
+        <span class="eyebrow">Núcleo Santa Virgínia</span>
+        <h3 class="display h3">Expedição 6 horas</h3>
+        <p>Corredeiras de classe II a IV e mata intocada na zona de amortecimento do Parque Estadual da Serra do Mar.</p>
+        <div class="compare__row"><span>Tempo de rio</span><b>≈ 6 horas</b></div>
+        <div class="compare__row"><span>Dificuldade</span><b>Classes II, III e IV</b></div>
+        <div class="compare__row"><span>Ponto de encontro</span><b>Hospedaria do Núcleo · km 78</b></div>
+        <div class="compare__row"><span>Chegada até</span><b>08h30</b></div>
+        <div class="compare__row"><span>Apoio</span><b>Caiaque de segurança e rádio VHF</b></div>
+        <a class="btn btn--block" href="rafting-6-horas.html">Ver detalhes @icon(arrow|icon--arrow)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2 class="display h2">Do WhatsApp à corredeira em 4 passos</h2>
+      </div>
+      <a class="btn btn--whats reveal" href="#" data-wa="Olá, Cia. de Rafting! Quero reservar uma descida.">@icon(whatsapp) Começar pelo passo 1</a>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Reserve sua data</h3><p>Fale com a nossa central pelo WhatsApp, escolha a atividade, a data e o número de pessoas.</p></div>
+      <div class="step reveal reveal-d1"><h3>Chegue ao ponto de encontro</h3><p>Manacá da Serra (4h) ou hospedaria do Núcleo Santa Virgínia (6h), no horário combinado.</p></div>
+      <div class="step reveal reveal-d2"><h3>Briefing de segurança</h3><p>Os guias entregam capacete, colete, remo e jaqueta e explicam os comandos do bote.</p></div>
+      <div class="step reveal reveal-d3"><h3>Desça o Paraibuna</h3><p>Corredeiras, floresta, banho de rio e muita história para contar na volta.</p></div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b data-count="30">30</b><span>anos de operação desde 1996</span></div>
+      <div class="stat"><b>II–IV</b><span>classes de corredeira no Paraibuna</span></div>
+      <div class="stat"><b data-count="310" data-suffix=" mil">310 mil</b><span>hectares do Parque Estadual da Serra do Mar</span></div>
+      <div class="stat"><b data-count="11">11</b><span>colaboradores na equipe</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="collage reveal">
+      @img(seguranca-guia|Guia com equipamento de resgate acompanhando a corredeira|(max-width: 920px) 90vw, 45vw)
+      @img(equipe-resgate|Equipe treinando resgate dentro do rio|(max-width: 920px) 50vw, 25vw)
+      <div class="stamp"><div><b>ISO</b><small>21.101<br>certificada</small></div></div>
+    </div>
+    <div class="reveal reveal-d1">
+      <span class="eyebrow">Segurança em primeiro lugar</span>
+      <h2 class="display h2">Aventura de verdade, risco gerenciado</h2>
+      <p class="lead">Nosso Sistema de Gestão da Segurança é certificado conforme a norma ISO 21.101 e revisado pelo menos uma vez por ano.</p>
+      <ul class="checklist">
+        <li>@icon(check)<span>Guias habilitados na norma ABNT NBR 15.370 — Condutores de Rafting — e certificados pela IRF.</span></li>
+        <li>@icon(check)<span>Capacete, colete salva-vidas, remo e jaqueta de frio para todos.</span></li>
+        <li>@icon(check)<span>Seguro saúde/viagem incluso em todas as atividades.</span></li>
+        <li>@icon(check)<span>Na expedição de 6h: caiaque de segurança e veículo de apoio com rádio VHF.</span></li>
+      </ul>
+      <a class="link-arrow" href="sobre.html#seguranca">Conheça nossa política de segurança @icon(arrow)</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">O destino</span>
+        <h2 class="display h2">Onde a serra encontra o rio</h2>
+        <p class="lead">A 180 km de São Paulo, entre o Vale do Paraíba e o Litoral Norte: floresta preservada e uma das cidades históricas mais charmosas do estado.</p>
+      </div>
+      <a class="link-arrow reveal" href="destino.html#como-chegar">Como chegar @icon(arrow)</a>
+    </div>
+    <div class="dest">
+      <a class="dest__card reveal" href="destino.html#serra-do-mar">
+        @img(rio-paraibuna-mata|Rio Paraibuna cercado pela Mata Atlântica|(max-width: 760px) 100vw, 50vw)
+        <div><span class="eyebrow">Natureza</span><h3 class="display h3">Parque Estadual da Serra do Mar</h3><p>A maior porção contínua de Mata Atlântica preservada do Brasil. Operamos na zona de amortecimento do Núcleo Santa Virgínia.</p><span class="link-arrow">Explorar @icon(arrow)</span></div>
+      </a>
+      <a class="dest__card reveal reveal-d1" href="destino.html#sao-luiz">
+        @img(sao-luiz-coreto|Coreto iluminado no centro histórico de São Luiz do Paraitinga|(max-width: 760px) 100vw, 50vw)
+        <div><span class="eyebrow">Cultura</span><h3 class="display h3">São Luiz do Paraitinga</h3><p>Casarões dos séculos XVIII e XIX, Festa do Divino, marchinhas e um dos carnavais mais autênticos de São Paulo.</p><span class="link-arrow">Explorar @icon(arrow)</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="mascot reveal">
+      <div class="mascot__art">@@MASCOTE_REMANDO@@</div>
+      <div>
+        <span class="eyebrow" style="color:var(--red-dark)">Prazer, sou o mascote</span>
+        <h2 class="display h2">Tamanduá-de-colete</h2>
+        <div class="bubble">“Fiquei encantado ao saber que as pessoas não vinham apenas fazer rafting: elas aprendiam, durante a descida, a importância de preservar a minha casa — que vocês chamam de Mata Atlântica.”</div>
+        <a class="btn btn--dark" href="sobre.html#mascote">Ouvir a história completa @icon(arrow|icon--arrow)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2 class="display h2">Momentos no Paraibuna</h2>
+      </div>
+      <a class="link-arrow reveal" href="https://www.instagram.com/ciaderafting/" target="_blank" rel="noopener">Mais no @ciaderafting @icon(instagram)</a>
+    </div>
+    <div class="gallery reveal" data-lightbox>
+      @g(rafting-onda|Bote furando uma onda na corredeira)
+      @g(grupo-remos|Grupo posando com remos antes da descida)
+      @g(rafting-bote|Bote atravessando corredeira)
+      @g(rio-paisagem|Trecho calmo do rio entre montanhas)
+      @g(rafting-grupo-remos|Remadores comemorando com remos para o alto)
+      @g(briefing-grupo|Grupo recebendo instruções de segurança)
+      @g(grupo-pedras|Grupo reunido sobre pedras à beira do rio)
+      @g(rafting-remos|Bote em meio à espuma branca da corredeira)
+      @g(remos-amarelos|Remos amarelos prontos para a expedição)
+      @g(bromelia|Bromélia da Mata Atlântica)
+      @g(guias-rio|Guias e participantes à beira da corredeira)
+      @g(peixes-rio|Peixes nas águas transparentes do rio)
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow">Nossa equipe</span>
+        <h2 class="display h2">Quem rema com você</h2>
+        <p class="lead">Colaboradores com formação técnica e acadêmica, certificados pela IRF e pelas normas ABNT.</p>
+      </div>
+      <div class="rail-nav reveal" data-rail="#team-rail">
+        <button data-dir="-1" aria-label="Anterior">@icon(chevron-left)</button>
+        <button data-dir="1" aria-label="Próximo">@icon(chevron-right)</button>
+      </div>
+    </div>
+    <div class="rail" id="team-rail">
+      <div class="person"><div class="person__img">@img(eq-rita|Rita de Cássia)</div><b>Rita de Cássia</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-rafael|Rafael Almeida)</div><b>Rafael Almeida</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-claiton|Claiton Rocha)</div><b>Claiton Rocha</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-fabio|Fabio Almeida)</div><b>Fabio Almeida</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-dimas|Dimas Antunes)</div><b>Dimas Antunes</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-farid|Farid Tau)</div><b>Farid Tau</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-helio|Hélio Souza)</div><b>Hélio Souza</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-ronaldo|Ronaldo Monteiro)</div><b>Ronaldo Monteiro</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-joao|João do Rafting)</div><b>João do Rafting</b><small>Diretor</small></div>
+      <div class="person"><div class="person__img">@img(eq-feu|Feu Almeida)</div><b>Feu Almeida</b><small>Cia. de Rafting</small></div>
+      <div class="person"><div class="person__img">@img(eq-fabiano|Fabiano Corrêa)</div><b>Fabiano Corrêa</b><small>Cia. de Rafting</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="container faq-layout">
+    <div class="reveal">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 class="display h2">Antes de cair na água</h2>
+      <p class="lead">Não achou o que procurava? A nossa central responde pelo WhatsApp.</p>
+      <a class="btn btn--whats" href="#" data-wa="Olá, Cia. de Rafting! Tenho uma dúvida:">@icon(whatsapp) Perguntar no WhatsApp</a>
+    </div>
+    <div class="faq reveal reveal-d1">
+      <details open><summary>Preciso ter experiência para fazer rafting?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>Não. Antes de entrar no rio, os guias fazem um briefing de segurança e ensinam os comandos de remada. Todo bote desce com um condutor habilitado na norma ABNT NBR 15.370.</p></div></details>
+      <details><summary>O que está incluso?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>Bote inflável, capacete, colete salva-vidas, remo, jaqueta de frio, guias habilitados e seguro saúde/viagem. Na expedição de 6 horas também há caiaque de segurança, veículo de apoio com rádio VHF, banheiros e vestiários.</p></div></details>
+      <details><summary>O que devo levar?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>Um par extra de tênis, camiseta, short, toalha, repelente, protetor solar e câmera. Na expedição de 6 horas, leve também agasalho de lã ou nylon (ou neoprene): dentro do parque a serração pode baixar a temperatura.</p></div></details>
+      <details><summary>Uso óculos. Posso participar?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>Pode, sim. Recomendamos usar algum tipo de cordão ou protetor que evite que os óculos caiam na água.</p></div></details>
+      <details><summary>Onde fica e como chego?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>São Luiz do Paraitinga fica a cerca de 200 km de São Paulo, pela Ayrton Senna/Carvalho Pinto ou Dutra até Taubaté, seguindo pela Rodovia Oswaldo Cruz sentido Ubatuba. O ponto de encontro do rafting 4h é no km 59 (Manacá da Serra) e o do 6h, no km 78 (Núcleo Santa Virgínia).</p><p><a class="link-arrow" href="destino.html#como-chegar">Ver rotas completas @icon(arrow)</a></p></div></details>
+      <details><summary>Existem vagas gratuitas?<span class="plus">@icon(x)</span></summary><div class="faq__a"><p>Sim. Pelo TAU/FF/PESM – Santa Virgínia nº 18/2022, ofertamos vagas gratuitas no rafting para moradores do entorno da Unidade de Conservação, escolas públicas, ONGs de cunho social, comunidades tradicionais e pessoas em situação de vulnerabilidade. Entre em contato para saber mais.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta reveal">
+      @img(rafting-comemoracao|Grupo comemorando no bote|100vw)
+      <div>
+        <h2 class="display h2">Bora descer o Paraibuna?</h2>
+        <p>Escolha a data, junte a turma e deixe o resto com a gente. Nossa central responde pelo WhatsApp.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn" href="#" data-wa="Olá, Cia. de Rafting! Quero reservar uma aventura.">@icon(whatsapp) Reservar agora</a>
+        <a class="btn btn--ghost" href="contato.html">Outros contatos</a>
+      </div>
+    </div>
+  </div>
+</section>

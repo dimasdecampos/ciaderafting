@@ -1,0 +1,65 @@
+titulo_aba: Expedição de Rafting 6 Horas – Núcleo | Cia de Rafting
+descricao: Rafting de 6 horas no Rio Paraibuna, classes II, III e IV, na zona de amortecimento do Núcleo Santa Virgínia — Parque Estadual da Serra do Mar. SGS certificado ISO 21.101.
+banner:
+  imagem: /rev2/assets/img/corredeira-cachoeira.webp
+  alt: Bote descendo corredeira forte no Rio Paraibuna
+blocos:
+  - tipo: cabecalho
+    titulo: Expedição de rafting 6 horas
+    subtitulo: Expedição de rafting na Mata Atlântica, Patrimônio da Humanidade
+  - tipo: destaque
+    texto: Descer o Rio Paraibuna conhecendo de perto a diversidade de espécies vegetais e animais que constituem a riqueza natural da Mata Atlântica, enfrentando as corredeiras, é o que faz deste rafting um dos melhores do país — não apenas pela aventura de desbravar um rio de classe II, III e IV, mas pela beleza cênica e inédita que uma das florestas mais importantes do mundo abriga, considerada Patrimônio da Humanidade pela UNESCO.
+  - tipo: texto
+    texto: Nesta expedição de 6 horas, o passageiro terá contato com um ambiente natural intocado. Além disso, toda a operação de rafting na Zona de Amortecimento do Núcleo Santa Virgínia e a Cia de Rafting passaram por um processo de regulamentação técnica e de segurança, e o produto possui um Sistema de Gestão da Segurança (SGS) certificado conforme a norma ISO 21.101.
+  - tipo: fatos
+    itens:
+      - rotulo: Nível de dificuldade
+        valor: Classes II, III e IV
+      - rotulo: Percurso
+        valor: Rio Paraibuna – zona de amortecimento do Parque Estadual da Serra do Mar
+      - rotulo: Duração
+        valor: Aproximadamente 6 horas
+      - rotulo: Apresentação
+        valor: Até 8h30 na hospedaria do Núcleo Santa Virgínia
+  - tipo: caixa
+    estilo: azul
+    titulo: Segurança
+    texto: |-
+      - Trecho com SGS – Sistema de Gestão da Segurança certificado conforme a Norma Internacional ISO 21.101.
+      - Equipe qualificada conforme a Norma ABNT NBR 15.370 – Competências de Pessoal – Condutores de Rafting.
+  - tipo: texto
+    texto: |-
+      **O que oferecemos:** botes infláveis com capacidade entre 5 e 6 passageiros cada, capacetes, coletes salva-vidas, remos, jaquetas de frio, instrutores habilitados na Norma ABNT NBR 15.370, seguro saúde/viagem, veículo de apoio com rádio VHF, caiaque de segurança, banheiros e vestiários para banho e troca de roupas.
+
+      **O que levar:** par extra de tênis, short, toalha, neoprene, repelente, protetor solar e máquina fotográfica. Para quem usa óculos, é recomendado algum tipo de protetor que evite quedas. Leve também agasalho de lã ou de nylon, pois dentro do parque estamos sujeitos à serração típica do clima quente e úmido, que provoca queda de temperatura.
+  - tipo: titulo
+    titulo: Horários e local
+  - tipo: texto
+    texto: |-
+      Os passageiros devem se apresentar até as 8h30 da manhã na hospedaria do Núcleo Santa Virgínia – Parque Estadual da Serra do Mar, onde nossos guias estarão aguardando para passar as instruções.
+
+      O Núcleo Santa Virgínia fica a 33 km do centro de São Luiz do Paraitinga, no km 78 da Rodovia Oswaldo Cruz, onde se inicia o acesso de 3 km de estrada de terra até a hospedaria.
+  - tipo: titulo
+    titulo: Acesso
+  - tipo: texto
+    texto: São Luiz do Paraitinga fica a 200 km de São Paulo, seguindo pela Rodovia Ayrton Senna/Carvalho Pinto ou pela Dutra, sentido Rio de Janeiro, até Taubaté, e depois pela Rodovia Oswaldo Cruz, sentido Litoral Norte (Ubatuba), até o km 78, onde, do lado esquerdo, se avista a placa do Parque Estadual da Serra do Mar.
+  - tipo: caixa
+    titulo: Legislação
+    texto: Em cumprimento à lei, disponibilizamos as informações mínimas e preliminares ao cliente, em conformidade com a Norma ABNT NBR ISO 21103 – Comunicação aos Participantes.
+    botao_texto: Informações mínimas e preliminares ao cliente
+    botao_link: mailto:contato@ciaderafting.com.br?subject=Informa%C3%A7%C3%B5es%20m%C3%ADnimas%20e%20preliminares%20ao%20cliente
+  - tipo: caixa
+    estilo: alerta
+    titulo: Rafting gratuito
+    texto: |-
+      Em cumprimento ao TAU/FF/PESM – Santa Virgínia nº 18/2022, imposto pela Fundação Florestal, mesmo operando fora da jurisdição do Parque, na Zona de Amortecimento, somos obrigados a ofertar vagas gratuitas para a atividade deste rafting.
+
+      Se você pertence ao público-alvo — prioritariamente moradores do entorno da UC, escolas públicas, organizações não governamentais de cunho social, comunidades tradicionais, pessoas inscritas em programas sociais e outros que apresentem baixa renda, escolaridade e/ou vulnerabilidade socioeconômica — [entre em contato conosco](contato.html).
+  - tipo: botoes
+    itens:
+      - texto: Reservar pelo WhatsApp
+        estilo: whatsapp
+        mensagem: Olá, Cia. de Rafting! Gostaria de reservar a Expedição de Rafting 6 horas (Núcleo).
+      - texto: Ver a expedição de 4 horas
+        link: expedicao-de-rafting-4-horas-brazadao.html
+        estilo: linha

@@ -1,0 +1,49 @@
+titulo_aba: Mascote | São Luiz do Paraitinga | Cia de Rafting
+descricao: O Tamanduá-de-colete, mascote da Cia de Rafting, conta por que preservar a Mata Atlântica do Parque Estadual da Serra do Mar.
+banner:
+  imagem: /rev2/assets/img/tamandua-real.webp
+  alt: Tamanduá-de-colete na floresta
+lateral:
+  imagem: /rev2/assets/img/mascote-corda.webp
+  alt: Mascote Tamanduá-de-colete pendurado na corda
+  posicao: direita
+blocos:
+  - tipo: cabecalho
+    titulo: Mascote
+    subtitulo: Tamanduá-de-colete
+  - tipo: destaque
+    texto: "… Fiquei encantado ao saber que as pessoas não vinham apenas fazer rafting: elas aprendiam, durante a descida, a grande importância de preservar o que estavam vendo — a minha casa, que vocês chamam de Mata Atlântica, que hoje é preservada pelo Parque Estadual da Serra do Mar."
+  - tipo: texto
+    texto: |-
+      Expliquei que minha família está ameaçadíssima de extinção por causa da fragmentação da floresta e, diferente do meu parente mais próximo, o Tamanduá-Bandeira, que vive no chão do Cerrado, eu subo na copa das árvores. Então, a preservação do que restou da Mata Atlântica é a única maneira de garantir a nossa sobrevivência e a de mais centenas de outras espécies de amigos que pedem a sua ajuda.
+
+      Meu bisavô contava que, quando vocês, brancos, chegaram há 500 anos, começaram a explorar a floresta de uma maneira completamente desorganizada e sem técnica nenhuma. Então nós, que somos a geração futura de nossos antepassados e temos nosso ambiente degradado hoje, o que vamos deixar para a nossa geração futura?
+
+      **Você que leu e gostou, continue este texto e ajude a contar nossa história para seus amigos — e ajude a nos preservar.**
+  - tipo: caixa
+    titulo: Curiosidades
+    texto: Seus hábitos são noturnos. Seu olfato é muito bom e o orienta para descobrir o esconderijo dos insetos. Para capturá-los, usa uma língua comprida cheia de saliva, que cola nos insetos — então é só puxá-los para a boca. Uma parte do seu estômago, parecida com a moela das galinhas, tritura os alimentos. Quando irritados, ficam de pé e defendem-se com as unhas das patas anteriores. O filhote acompanha a mãe até a próxima gestação.
+  - tipo: ficha
+    itens:
+      - rotulo: Nome científico
+        valor: "*Tamandua tetradactyla*"
+      - rotulo: Nome em inglês
+        valor: Lesser Anteater
+      - rotulo: Ordem
+        valor: Edentada
+      - rotulo: Família
+        valor: Myrmecophagidae
+      - rotulo: Habitat
+        valor: Florestas tropicais e Cerrado
+      - rotulo: Distribuição geográfica
+        valor: Da América Central à América do Sul
+      - rotulo: Peso
+        valor: Em média 5 kg
+      - rotulo: Longevidade
+        valor: 9 anos
+      - rotulo: Gestação
+        valor: 5 meses
+      - rotulo: Número de filhotes
+        valor: "01"
+      - rotulo: Alimentação
+        valor: Cupins e formigas

@@ -1,0 +1,33 @@
+titulo_aba: Nossa Equipe | Cia de Rafting | Brasil
+descricao: "Conheça os colaboradores da Cia de Rafting: guias e instrutores que trabalham para a sua satisfação e segurança no Rio Paraibuna."
+banner:
+  imagem: /rev2/assets/img/guias-rio.webp
+  alt: Guias da Cia de Rafting no rio
+blocos:
+  - tipo: cabecalho
+    titulo: Colaboradores
+    subtitulo: Conheça quem trabalha para sua satisfação
+  - tipo: equipe
+    pessoas:
+      - nome: Rita de Cássia
+        foto: /rev2/assets/img/eq-rita.webp
+      - nome: Rafael Almeida
+        foto: /rev2/assets/img/eq-rafael.webp
+      - nome: Claiton Rocha
+        foto: /rev2/assets/img/eq-claiton.webp
+      - nome: Fabio Almeida
+        foto: /rev2/assets/img/eq-fabio.webp
+      - nome: Dimas Antunes
+        foto: /rev2/assets/img/eq-dimas.webp
+      - nome: Farid Tau
+        foto: /rev2/assets/img/eq-farid.webp
+      - nome: Hélio Souza
+        foto: /rev2/assets/img/eq-helio.webp
+      - nome: Ronaldo Monteiro
+        foto: /rev2/assets/img/eq-ronaldo.webp
+      - nome: João do Rafting
+        foto: /rev2/assets/img/eq-joao.webp
+      - nome: Feu Almeida
+        foto: /rev2/assets/img/eq-feu.webp
+      - nome: Fabiano Corrêa
+        foto: /rev2/assets/img/eq-fabiano.webp

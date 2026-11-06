@@ -1,0 +1,247 @@
+# Configuração do painel de edição (Pages CMS — https://pagescms.org)
+# Cobre a rev2. Os arquivos editados ficam em rev2/_conteudo/ e o site é gerado por rev2/_src/build.py.
+
+media:
+  input: rev2/assets/img
+  output: /rev2/assets/img
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: site
+    label: Dados gerais do site
+    type: file
+    path: rev2/_conteudo/site.yml
+    format: yaml
+    fields:
+      - { name: whatsapp, label: "WhatsApp (só números, com 55 e DDD)", type: string, description: "Ex.: 5512997031363" }
+      - { name: whatsapp_exibicao, label: WhatsApp como aparece no site, type: string }
+      - { name: email, label: E-mail de contato, type: string }
+      - { name: cidade, label: Cidade (rodapé), type: string }
+      - { name: facebook, label: Link do Facebook, type: string }
+      - { name: instagram, label: Link do Instagram, type: string }
+      - { name: mensagem_padrao, label: Mensagem padrão do WhatsApp, type: string }
+      - { name: mensagem_reserva, label: Mensagem do botão "Reservar", type: string }
+      - { name: mensagem_site, label: Mensagem do botão flutuante do WhatsApp, type: string }
+      - { name: ano_inicio, label: Ano de fundação (rodapé), type: number }
+      - { name: selo_iso, label: Texto do selo ISO (rodapé), type: string }
+      - { name: cadastur, label: Texto do CADASTUR (rodapé), type: string }
+
+  - name: paginas
+    label: Páginas
+    type: collection
+    path: rev2/_conteudo/paginas
+    format: yaml
+    view:
+      fields: [titulo_aba]
+      primary: titulo_aba
+    fields:
+      - { name: titulo_aba, label: "Título da aba do navegador / Google", type: string, required: true }
+      - { name: descricao, label: "Descrição para o Google (1 ou 2 frases)", type: text }
+      - name: banner
+        label: Foto grande no topo da página
+        type: object
+        fields:
+          - { name: imagem, label: Foto, type: image }
+          - { name: alt, label: "Descrição da foto (para deficientes visuais)", type: string }
+      - name: hero
+        label: Foto de abertura (só na página inicial)
+        type: object
+        fields:
+          - { name: imagem, label: Foto, type: image }
+          - { name: alt, label: Descrição da foto, type: string }
+      - name: lateral
+        label: Desenho do mascote ao lado do texto (só em algumas páginas)
+        type: object
+        fields:
+          - { name: imagem, label: Imagem, type: image }
+          - { name: alt, label: Descrição da imagem, type: string }
+          - name: posicao
+            label: Lado
+            type: select
+            options:
+              values:
+                - { value: direita, label: Direita }
+                - { value: esquerda, label: Esquerda }
+      - name: blocos
+        label: Conteúdo da página (arraste para reordenar, adicione ou remova blocos)
+        type: block
+        list: true
+        blockKey: tipo
+        blocks:
+          - name: cabecalho
+            label: Título da página
+            fields:
+              - { name: titulo, label: Título, type: string }
+              - { name: subtitulo, label: Subtítulo, type: string }
+          - name: titulo
+            label: Título de seção
+            fields:
+              - { name: titulo, label: Título, type: string }
+              - { name: ancora, label: "Âncora do link (opcional, sem espaços)", type: string }
+          - name: texto
+            label: Texto
+            fields:
+              - { name: texto, label: Texto, type: rich-text }
+          - name: destaque
+            label: Texto em destaque (letra maior)
+            fields:
+              - { name: texto, label: Texto, type: rich-text }
+          - name: caixa
+            label: Caixa de destaque
+            fields:
+              - name: estilo
+                label: Cor
+                type: select
+                options:
+                  values:
+                    - { value: padrao, label: Cinza }
+                    - { value: azul, label: Azul }
+                    - { value: alerta, label: Amarela (aviso) }
+              - { name: titulo, label: Título (opcional), type: string }
+              - { name: texto, label: Texto, type: rich-text }
+              - { name: selo, label: 'Selo redondo (opcional, ex.: "ISO 21101")', type: string }
+              - { name: botao_texto, label: Texto do botão (opcional), type: string }
+              - { name: botao_link, label: Link do botão, type: string }
+          - name: fatos
+            label: Quadros de informação (percurso, duração, horário...)
+            fields:
+              - name: itens
+                label: Quadros
+                type: object
+                list: true
+                fields:
+                  - { name: rotulo, label: Título pequeno, type: string }
+                  - { name: valor, label: Informação, type: string }
+          - name: selos
+            label: Selos (etiquetas com escudo)
+            fields:
+              - { name: itens, label: Selos, type: string, list: true }
+          - name: etiquetas
+            label: Etiquetas (lista de palavras)
+            fields:
+              - { name: itens, label: Etiquetas, type: string, list: true }
+          - name: citacao
+            label: Frase de destaque
+            fields:
+              - { name: texto, label: Frase, type: string }
+          - name: botoes
+            label: Botões
+            fields:
+              - name: itens
+                label: Botões
+                type: object
+                list: true
+                fields:
+                  - { name: texto, label: Texto do botão, type: string }
+                  - name: estilo
+                    label: Estilo
+                    type: select
+                    options:
+                      values:
+                        - { value: azul, label: Azul }
+                        - { value: linha, label: Branco com borda }
+                        - { value: whatsapp, label: WhatsApp (verde) }
+                  - name: icone
+                    label: Ícone
+                    type: select
+                    options:
+                      values:
+                        - { value: nenhum, label: Nenhum }
+                        - { value: seta, label: Seta }
+                        - { value: whatsapp, label: WhatsApp }
+                        - { value: mail, label: E-mail }
+                        - { value: file, label: Documento }
+                  - { name: link, label: "Link (deixe vazio no botão WhatsApp)", type: string }
+                  - { name: mensagem, label: "Mensagem do WhatsApp (só botão WhatsApp)", type: string }
+          - name: galeria
+            label: Galeria de fotos (carrossel)
+            fields:
+              - { name: titulo, label: Nome da galeria (para leitores de tela), type: string }
+              - name: fotos
+                label: Fotos
+                type: object
+                list: true
+                fields:
+                  - { name: imagem, label: Foto, type: image }
+                  - { name: alt, label: Descrição da foto, type: string }
+          - name: missao
+            label: Três cartões (missão, visão, valores)
+            fields:
+              - name: itens
+                label: Cartões
+                type: object
+                list: true
+                fields:
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+          - name: ficha
+            label: Ficha técnica (lista de dados)
+            fields:
+              - name: itens
+                label: Dados
+                type: object
+                list: true
+                fields:
+                  - { name: rotulo, label: Nome do dado, type: string }
+                  - { name: valor, label: Valor, type: string }
+          - name: barras
+            label: Barras de porcentagem
+            fields:
+              - name: itens
+                label: Barras
+                type: object
+                list: true
+                fields:
+                  - { name: rotulo, label: Nome, type: string }
+                  - { name: valor, label: Porcentagem (0 a 100), type: number }
+          - name: preco
+            label: Preços
+            fields:
+              - name: itens
+                label: Preços
+                type: object
+                list: true
+                fields:
+                  - { name: rotulo, label: Descrição, type: string }
+                  - { name: valor, label: Valor, type: string }
+          - name: trilha
+            label: Cartão de trilha
+            fields:
+              - { name: nome, label: Nome da trilha, type: string }
+              - { name: nivel, label: "Nível (ex.: Fácil)", type: string }
+              - { name: pesada, label: "Destacar em vermelho (trilha pesada)", type: boolean }
+              - name: fatos
+                label: Quadros de informação
+                type: object
+                list: true
+                fields:
+                  - { name: rotulo, label: Título pequeno, type: string }
+                  - { name: valor, label: Informação, type: string }
+              - { name: detalhes, label: Detalhes, type: rich-text }
+          - name: equipe
+            label: Fotos da equipe
+            fields:
+              - name: pessoas
+                label: Pessoas
+                type: object
+                list: true
+                fields:
+                  - { name: nome, label: Nome, type: string }
+                  - { name: foto, label: Foto, type: image }
+          - name: cartoes
+            label: Cartões com foto e link (página inicial)
+            fields:
+              - name: itens
+                label: Cartões
+                type: object
+                list: true
+                fields:
+                  - { name: imagem, label: Foto, type: image }
+                  - { name: alt, label: Descrição da foto, type: string }
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto curto, type: string }
+                  - { name: link, label: "Página de destino (ex.: trilhas.html)", type: string }
+          - name: formulario
+            label: Formulário de contato
+            fields:
+              - { name: dica, label: Texto pequeno abaixo dos botões, type: string }
