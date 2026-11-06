@@ -5,8 +5,9 @@ A página principal (`index.html`) é um índice com atalhos para cada revisão.
 - `rev0/` — primeira versão: tema escuro, página única (home longa).
 - `rev1/` — mesma estrutura da rev0 com visual claro e sóbrio.
 - `rev2/` — fiel ao site original do Wix: 12 páginas, mesmo menu e textos, modernizada e responsiva, com painel de edição (Pages CMS; ver `rev2/GUIA-DE-EDICAO.md`).
+- `rev3/` — "rafting gourmet": visual fino e executivo (verde-floresta, marfim e dourado), só as primeiras páginas; as demais apontam para a rev2.
 - `_capas/` — miniaturas usadas no índice.
 
-Para gerar as páginas de uma revisão de novo: `cd revN && python _src/build.py` (a rev2 precisa de `pip install pillow pyyaml markdown`).
+Para gerar as páginas de uma revisão de novo: `cd revN && python _src/build.py` (a rev2 precisa de `pip install pillow pyyaml markdown`; a rev3, de `pillow`).
 
 Para ver localmente: `python -m http.server 8000` e abrir http://localhost:8000
