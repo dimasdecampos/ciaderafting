@@ -1,0 +1,35 @@
+whatsapp: "5512997031363"
+whatsapp_exibicao: "(12) 99703-1363"
+email: contato@ciaderafting.com.br
+cidade: São Luiz do Paraitinga – SP, Brasil
+facebook: https://www.facebook.com/Ciaderafting
+instagram: https://www.instagram.com/ciaderafting/
+mensagem_padrao: Olá, Cia. de Rafting!
+mensagem_reserva: Olá, Cia. de Rafting! Gostaria de fazer uma reserva.
+mensagem_site: Olá, Cia. de Rafting! Vim pelo site e gostaria de mais informações.
+ano_inicio: 1996
+selo_iso: ISO 21.101 CERTIFICADA
+cadastur: CADASTUR 26.028025.10.0001-1
+slogan: Rafting, trilhas e educação na Mata Atlântica desde 1996
+# Menu principal (no WordPress: Aparência > Menus). Item com "itens" vira submenu.
+menu:
+  - texto: Home
+    link: index.html
+  - texto: A Cia. de Rafting
+    itens:
+      - {texto: Sobre nós, link: sobre-nos.html}
+      - {texto: Política de segurança, link: politica-de-seguranca.html}
+      - {texto: Nossa equipe, link: nossa-equipe.html}
+      - {texto: Mascote, link: mascote.html}
+      - {texto: Pq. Estadual da Serra do Mar, link: pq-estadual-da-serra-do-mar.html}
+      - {texto: São Luiz do Paraitinga, link: sao-luiz-do-paraitinga.html}
+  - texto: Atividades
+    itens:
+      - {texto: Expedição de rafting 4 horas – Brazadão, link: expedicao-de-rafting-4-horas-brazadao.html}
+      - {texto: Expedição de rafting 6 horas – Núcleo, link: expedicao-de-rafting-6-horas-nucleo.html}
+      - {texto: Trilhas, link: trilhas.html}
+  - texto: Educação & Treinamento
+    itens:
+      - {texto: Curso de rafting, link: curso-de-rafting.html}
+  - texto: Contato
+    link: contato.html

@@ -1,0 +1,127 @@
+titulo_aba: Curso de Rafting | Cia de Rafting
+descricao: Curso básico de rafting na Corredeira dos Bancos, Rio Paraibuna, São Luiz do Paraitinga – SP. 48 horas/aula, teoria e prática, certificado.
+topo:
+  titulo: Curso básico de rafting
+  subtitulo: Aprendizado nos rios da Serra do Mar
+  imagem: curso-resgate-rio.webp
+  alt: Treino de resgate no rio durante o curso
+  botoes:
+  - texto: Reservar pelo WhatsApp
+    estilo: whatsapp
+    mensagem: Olá, Cia. de Rafting! Quero reservar uma vaga no Curso de Rafting.
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: destaque
+    texto: 'Em São Luiz do Paraitinga – SP encontra-se a Corredeira dos Bancos, onde faremos a nossa jornada de aprendizagem: um local formidável, de fácil acesso e características ímpares, literalmente chamado de "corredeira escola".'
+  - tipo: fatos
+    itens:
+    - rotulo: Carga horária
+      valor: 48 horas/aula em 2 etapas
+    - rotulo: Horários
+      valor: Das 8h00 às 17h00
+    - rotulo: Local
+      valor: Rio Paraibuna – Base da Cia. de Rafting, Sítio Água
+  - tipo: texto
+    texto: |-
+      **Objetivo:** desenvolver as habilidades técnicas da atividade de rafting conforme os requisitos normativos e as boas práticas já consagradas.
+
+      **Método:** o curso básico é realizado no Rio Paraibuna, em São Luiz do Paraitinga, com carga horária total de 48 horas/aula, distribuídas em 2 etapas: a primeira com dias consecutivos teóricos e práticos, e a segunda com 2 dias de descidas de treinamento nos operacionais da Cia de Rafting, agendados durante a temporada de rafting posterior ao curso.
+
+      Tudo é realizado em um ambiente apropriado para a aplicação de teoria e prática, fornecendo noções sobre técnicas de condução do bote, morfologia de rios, classificação e análise de corredeiras, sinais, resgate, plano de emergência, equipamentos e aspectos interpessoais envolvidos na prática do rafting em corredeiras de até nível III de dificuldade.
+
+      Desenvolvido com um fluxo de aprendizado dinâmico que envolve teoria e prática, em 6 dias você adquire toda a bagagem básica necessária para continuar os treinamentos e o refino das habilidades, até atingir o mínimo da Norma para a fase de qualificação para conduzir a atividade em operações comerciais.
+  - tipo: citacao
+    texto: Aprenda, treine, aprimore-se!
+- fundo: suave
+  titulo: Conteúdo
+  blocos:
+  - tipo: texto
+    texto: |-
+      - Histórico do rafting.
+      - Ambiente de rio: dinâmica das águas e classificação dos rios.
+      - Equipamentos (anatomia, materiais, características e manutenção).
+      - Preparando o equipamento.
+      - Preparando a equipe.
+      - Técnicas de remada.
+      - Técnicas em corredeiras.
+      - Segurança e resgate.
+      - Estrutura do rafting no Brasil.
+      - Como continuar a formação até a qualificação na NBR 15.370.
+- fundo: branco
+  titulo: Normas Brasileiras de Referência
+  blocos:
+  - tipo: texto
+    texto: |-
+      - ABNT NBR ISO 21.101 – Sistema de Gestão da Segurança.
+      - ABNT NBR 15.370 – Condutores de Rafting – Competências de Pessoal.
+      - ABNT NBR 16.708 – Rafting – Requisitos para produto.
+- fundo: suave
+  titulo: Cronograma
+  blocos:
+  - tipo: fatos
+    itens:
+    - rotulo: 1ª etapa
+      valor: '1º dia: teoria e prática · 2º dia: prática · 3º dia: prática'
+    - rotulo: 2ª etapa
+      valor: 2 dias agendados com a central de reservas durante a temporada de rafting posterior ao curso
+  - tipo: texto
+    texto: |-
+      **Incluso:** equipamentos, anorak (jaqueta de frio), material didático e certificado do curso.
+
+      **O que trazer:** calçado fechado, roupa de banho, bermuda, camiseta, boné, agasalho de nylon ou de lã ou roupa de neoprene, camisa de lycra, roupas de troca e protetor solar.
+  - tipo: citacao
+    texto: “É uma experiência incrível. Você conhece pessoas incríveis, você aprende coisas incríveis.”
+  - tipo: caixa
+    estilo: azul
+    titulo: Datas
+    texto: 2025 – 10, 11 e 12 de outubro. Consulte as próximas turmas com o nosso atendimento.
+  - tipo: caixa
+    titulo: Acomodação
+    texto: Nossa base, o Sítio Água, possui local para camping com cozinha comunitária e vestiários, e uma casa com alojamento coletivo de quatro quartos que acomodam 12 pessoas — consulte os valores. Existe a possibilidade de acomodação em outros locais, porém não é fornecido transporte até o local do curso. A base fica a 25 km do centro de São Luiz do Paraitinga. Consulte com nosso atendimento as opções.
+- fundo: branco
+  titulo: Valor
+  blocos:
+  - tipo: texto
+    texto: R$ 1.399,00 por aluno.
+  - tipo: preco
+    itens:
+    - rotulo: À vista (PIX ou depósito) · 10% de desconto
+      valor: R$ 1.259,00
+    - rotulo: No cartão de crédito
+      valor: até 10× de R$ 139,90
+  - tipo: botoes
+    itens:
+    - texto: Clique para reservar
+      estilo: whatsapp
+      mensagem: Olá, Cia. de Rafting! Quero reservar uma vaga no Curso de Rafting.
+- fundo: suave
+  titulo: Módulos do curso
+  blocos:
+  - tipo: galeria
+    titulo: Fotos do curso de rafting
+    fotos:
+    - imagem: curso-resgate-rio.webp
+      alt: Módulo de resgate no rio
+    - imagem: curso-cordas.webp
+      alt: Módulo de cordas e sacola de resgate
+    - imagem: curso-vira-bote.webp
+      alt: Treino de virar e desvirar o bote
+    - imagem: curso-base-sitio.webp
+      alt: Base da Cia. de Rafting no Sítio Água
+    - imagem: equipamentos.webp
+      alt: Equipamentos de rafting
+    - imagem: equipe-resgate.webp
+      alt: Equipe em treino de resgate
+    - imagem: seguranca-ancoragem.webp
+      alt: Sistema de ancoragem com cordas
+    - imagem: seguranca-guia-2.webp
+      alt: Guia com equipamento de resgate
+    - imagem: briefing-grupo.webp
+      alt: Aula teórica com o grupo
+    - imagem: guias-rio.webp
+      alt: Alunos e guias no rio
+    - imagem: rafting-grupo-remos.webp
+      alt: Prática de remada em equipe
+    - imagem: rafting-onda.webp
+      alt: Prática em corredeira

@@ -1,0 +1,41 @@
+titulo_aba: Contato | São Luiz do Paraitinga | Cia de Rafting & Expedições
+descricao: 'Fale com a Cia de Rafting: WhatsApp (12) 99703-1363, contato@ciaderafting.com.br. Base operacional no Sítio Água e escritório em São Luiz do Paraitinga – SP.'
+topo:
+  titulo: Para contato com a Cia. de Rafting
+  subtitulo: Para informações gerais e esclarecimento de dúvidas, entre em contato conosco
+  imagem: rafting-remos.webp
+  alt: Remos levantados no bote
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: colunas
+    esquerda:
+    - tipo: formulario
+      dica: A mensagem abre pronta no WhatsApp ou no seu e-mail — é só confirmar o envio.
+    direita:
+    - tipo: caixa
+      titulo: Base operacional
+      texto: |-
+        Sítio Água
+        Rodovia Dr. Oswaldo Cruz, km 66,5
+        São Luiz do Paraitinga – SP · CEP 12.140-000 · Brasil
+
+        [+55 (12) 99703-1363](https://wa.me/5512997031363)
+
+        [contato@ciaderafting.com.br](mailto:contato@ciaderafting.com.br)
+    - tipo: caixa
+      titulo: Escritório administrativo
+      texto: |-
+        Rua Cel. Domingues de Castro, 128, sala 02
+        São Luiz do Paraitinga – SP · CEP 12.140-000 · Brasil
+
+        [+55 (12) 99703-1363](https://wa.me/5512997031363)
+
+        [contato@ciaderafting.com.br](mailto:contato@ciaderafting.com.br)
+    - tipo: caixa
+      estilo: azul
+      titulo: Redes sociais
+      texto: |-
+        [facebook.com/Ciaderafting](https://www.facebook.com/Ciaderafting)
+
+        [@ciaderafting no Instagram](https://www.instagram.com/ciaderafting/)

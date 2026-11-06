@@ -1,0 +1,33 @@
+titulo_aba: Política de Segurança | Cia de Rafting | Brasil
+descricao: Política de segurança da Cia de Rafting, de acordo com a ABNT NBR ISO 21101 — Sistema de Gestão da Segurança para turismo de aventura.
+topo:
+  titulo: Política de segurança
+  imagem: seguranca-guia.webp
+  alt: Guia de segurança com corda de resgate na corredeira
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: destaque
+    texto: 'Para garantir uma experiência segura e significativa, envolvendo a integração com a natureza e a cultura onde nossas atividades são desenvolvidas, buscamos:'
+  - tipo: texto
+    texto: |-
+      - Atender os requisitos aplicáveis, incluindo os de segurança do trabalho e ambiental, além das boas práticas já consagradas.
+      - Promover a conduta consciente em ambientes naturais, nas atividades de aventura, entre colaboradores, clientes e demais partes interessadas.
+      - Melhorar continuamente a qualidade dos serviços prestados através de análises críticas realizadas pela empresa e pelos clientes.
+  - tipo: fatos
+    itens:
+    - rotulo: Realizada por
+      valor: João Eduardo – Diretor
+    - rotulo: Aprovada por
+      valor: João Eduardo – Representante da Direção
+    - rotulo: Revisada em
+      valor: 05/09/2025
+    - rotulo: Local
+      valor: São Luiz do Paraitinga – SP
+    - rotulo: Norma
+      valor: ABNT NBR ISO 21101
+    - rotulo: Periodicidade de revisão
+      valor: No mínimo 1 vez por ano
+  - tipo: caixa
+    titulo: Sistema de Gestão da Segurança
+    texto: É uma norma técnica de referência nacional cuja implementação é obrigatória por lei (vide Art. 34, item II, do Decreto nº 7.381, de 2 de dezembro de 2010, que regulamenta a Lei Geral do Turismo nº 11.771, de 17 de setembro de 2008). Consiste num conjunto de padrões e práticas associadas a avaliações dos riscos potenciais nas operações das atividades de turismo de aventura, que determinam um tratamento específico de cada um deles e sua administração através de recursos, estrutura e responsabilidades, obedecendo a planos de gestão com objetivos e metas visando a melhoria contínua do sistema.

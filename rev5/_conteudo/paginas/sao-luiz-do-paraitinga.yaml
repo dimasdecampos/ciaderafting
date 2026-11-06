@@ -1,0 +1,64 @@
+titulo_aba: São Luiz do Paraitinga | Rafting | Cia de Rafting & Expedições
+descricao: 'São Luiz do Paraitinga: patrimônio histórico, religiosidade popular, cultura caipira, carnaval de marchinhas, riqueza natural e como chegar.'
+topo:
+  titulo: São Luiz do Paraitinga
+  subtitulo: Patrimônio histórico
+  imagem: sao-luiz-coreto.webp
+  alt: Coreto e casarões históricos de São Luiz do Paraitinga
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: texto
+    texto: |-
+      São Luiz do Paraitinga é uma pequena cidade situada no reverso da Serra do Mar, entre os municípios de Taubaté, no Vale do Paraíba, e Ubatuba, no Litoral Norte do Estado de São Paulo, a 169 km da Capital e a uma altitude de 741 m. O início de São Luiz do Paraitinga está ligado à passagem dos tropeiros que faziam o transporte do ouro vindo de Minas Gerais para o embarque nos portos de Parati e Ubatuba em direção a Portugal, na época em que o ciclo do café movimentava a economia paulista e fazia barões. Hoje exibe uma bela arquitetura colonial e preserva um dos maiores conjuntos arquitetônicos do Estado, com igrejas e casarões dos séculos XVIII e XIX. É uma cidade colorida, com suas festas religiosas e folclóricas, rodeada por belas paisagens.
+
+      Fundada em 1769, numa época em que o Vale do Paraíba tornou-se uma importante zona de penetração dos Bandeirantes que se dirigiam ao sertão, a cidade era um entreposto de tropeiros. Em 1773 foi elevada à condição de Vila. O ciclo do café, iniciado por volta de 1830, alterou a economia da então "Vila de São Luiz do Paraytinga", proporcionando um surto de desenvolvimento e o acúmulo de riquezas pelos proprietários mais abastados.
+
+      As fazendas coloniais foram inspiradas na arquitetura neoclássica das fazendas fluminenses, trazida por construtores portugueses que vieram para o Brasil junto com a corte de Dom João VI.
+
+      O centro urbano constitui o maior patrimônio arquitetônico histórico de São Luiz, somando mais de 90 casas, casarões e igrejas, além do Mercado Municipal.
+- fundo: suave
+  titulo: Religiosidade popular
+  blocos:
+  - tipo: texto
+    texto: |-
+      Um dos atrativos de São Luiz é o rico calendário de festas religiosas e culturais durante o ano. A Festa do Divino é a principal delas e tem origem no município no século XIX. Realizada no final de maio, dura oito dias, com procissões e apresentações de congada, moçambique, dança de fitas e a tradicional Cavalhada.
+
+      A presença dos bonecos gigantes "João Paulino e Maria Angu", dentre outras apresentações folclóricas, anima as festividades, que são complementadas com a farta distribuição do "afogado", um cozido de carne preparado pelos festeiros em gigantescas panelas.
+- fundo: branco
+  titulo: Cultura caipira
+  blocos:
+  - tipo: texto
+    texto: |-
+      São Luiz é considerada um dos últimos redutos caipiras do Estado. O típico caipira, também chamado de capiau, caboclo ou matuto, inspirou Monteiro Lobato através do personagem Jeca Tatu, e também Amácio Mazzaropi, que encarnou o estereótipo com muita propriedade.
+
+      Hoje, para manter a tradição, são realizados vários movimentos que expressam esta cultura, dentre os quais se sobressai o "Festival de Marchinhas Juninas", para resgatar parte dos hábitos, costumes e tradições desse povo.
+- fundo: suave
+  titulo: Carnaval
+  blocos:
+  - tipo: texto
+    texto: O carnaval de São Luiz é um dos mais autênticos do Estado de São Paulo. Ao som de marchinhas carnavalescas, que levam como tema lendas e mitos locais, em razão do misticismo religioso e popular, a festa se estende ao longo dos dias, resgatando a cultura do povo luizense. A fama de "Terra de Músicos" contribui para manter vivo o espírito de criação das marchinhas.
+- fundo: branco
+  titulo: Riqueza natural
+  blocos:
+  - tipo: texto
+    texto: |-
+      A exuberância da paisagem é marcante em São Luiz. As montanhas são entrecortadas por rios, riachos e córregos, com a presença de várias cachoeiras. No Núcleo Santa Virgínia, Parque Estadual da Serra do Mar, podemos apreciar toda a grandeza da Mata Atlântica em seu estado natural, com sua grande diversidade de plantas, animais e microrganismos. As escarpas cobertas de mata da Serra do Mar são o último refúgio natural para muitos animais e vegetais ameaçados de extinção.
+
+      Além das saudáveis caminhadas pela Mata Atlântica, os mais aventureiros podem ousar descer as corredeiras do Rio Paraibuna praticando o rafting, atividade que consiste em desafiar as corredeiras em botes de borracha desenvolvidos especialmente para esta atividade.
+
+      A organizadora desta atividade é a Cia de Rafting, empresa constituída desde 1996, que além de rafting opera também trekking, rapel, tirolesa e programas de dois dias com bike, acampamento e trilha.
+- fundo: suave
+  titulo: Como chegar
+  blocos:
+  - tipo: fatos
+    itens:
+    - rotulo: De São Paulo
+      valor: Rod. Presidente Dutra – saída km 111 em Taubaté. Acesso pela Rod. Oswaldo Cruz (S. L. Paraitinga – saída km 43).
+    - rotulo: Do Rio de Janeiro
+      valor: Rod. Presidente Dutra – saída em Taubaté. Acesso pela Rod. Oswaldo Cruz (S. L. Paraitinga – saída km 43).
+    - rotulo: De Campinas
+      valor: Rod. Dom Pedro, acesso à Rod. Presidente Dutra – saída km 111 em Taubaté. Acesso pela Rod. Oswaldo Cruz (saída km 43).
+    - rotulo: De São José dos Campos
+      valor: Rod. Presidente Dutra – saída km 111 em Taubaté. Acesso pela Rod. Oswaldo Cruz (S. L. Paraitinga – saída km 43).
+  ancora: como-chegar

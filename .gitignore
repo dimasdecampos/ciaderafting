@@ -1,2 +1,5 @@
 __pycache__/
 rev2/assets/img/auto/
+# WordPress local (rev4) fica só no computador; a versão online está em dimasdecampos.freehosting.dev
+rev4/
+*.zip

@@ -1,0 +1,126 @@
+titulo_aba: Cia de Rafting | Rafting SP | São Luiz do Paraitinga – SP, Brasil
+descricao: Rafting no Rio Paraibuna, trilhas na Serra do Mar e curso de rafting em São Luiz do Paraitinga – SP. Desde 1996, com segurança certificada ISO 21.101.
+topo:
+  estilo: video
+  sobretitulo: São Luiz do Paraitinga – SP · desde 1996
+  titulo: Cia. de Rafting
+  subtitulo: Rafting, trilhas e educação na Mata Atlântica desde 1996
+  imagem: hero-corredeira.webp
+  alt: Bote de rafting enfrentando a corredeira no Rio Paraibuna
+  botoes:
+  - texto: Reservar pelo WhatsApp
+    estilo: whatsapp
+  - texto: Ver as atividades
+    link: '#atividades'
+    estilo: claro
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: numeros
+    itens:
+    - valor: '1996'
+      rotulo: Uma das cinco primeiras operadoras de rafting comercial do Brasil
+    - valor: ISO 21.101
+      rotulo: Sistema de Gestão da Segurança certificado
+    - valor: NBR 15.370
+      rotulo: Condutores de rafting qualificados
+    - valor: Classes II–IV
+      rotulo: Corredeiras do Rio Paraibuna
+- fundo: suave
+  sobretitulo: Atividades
+  titulo: Escolha a sua aventura
+  ancora: atividades
+  blocos:
+  - tipo: cartoes
+    itens:
+    - imagem: rafting-comemoracao.webp
+      alt: Grupo comemorando no bote
+      titulo: Expedição de rafting 4 horas
+      texto: Brazadão · Rio Paraibuna, Natividade da Serra
+      link: expedicao-de-rafting-4-horas-brazadao.html
+    - imagem: corredeira-cachoeira.webp
+      alt: Bote descendo corredeira forte
+      titulo: Expedição de rafting 6 horas
+      texto: Núcleo Santa Virgínia · Classes II, III e IV
+      link: expedicao-de-rafting-6-horas-nucleo.html
+    - imagem: trilha-grupo.webp
+      alt: Grupo caminhando na trilha
+      titulo: Trilhas
+      texto: Parque Estadual da Serra do Mar · Núcleo Santa Virgínia
+      link: trilhas.html
+    - imagem: curso-vira-bote.webp
+      alt: Treino de virar o bote no curso
+      titulo: Curso de rafting
+      texto: Aprendizado nos rios da Serra do Mar · 48 horas/aula
+      link: curso-de-rafting.html
+- fundo: branco
+  blocos:
+  - tipo: colunas
+    esquerda:
+    - tipo: sobretitulo
+      texto: A Cia. de Rafting
+    - tipo: titulo
+      titulo: História
+    - tipo: texto
+      texto: Fundada em 1996, a Cia de Rafting é uma das cinco primeiras operadoras de Rafting Comercial do Brasil, responsável pela implantação das operações na Bacia do Rio Paraibuna, na região do Vale do Paraíba, no Estado de São Paulo, que abrangem os municípios de São Luiz do Paraitinga, importante centro cultural e arquitetônico, e Natividade da Serra, situados a 180 km de São Paulo.
+    - tipo: botoes
+      itens:
+      - texto: Sobre nós
+        link: sobre-nos.html
+        estilo: azul
+        icone: seta
+      - texto: Nossa equipe
+        link: nossa-equipe.html
+        estilo: linha
+    direita:
+    - tipo: imagem
+      imagem: grupo-rio.webp
+      alt: Grupo com vários botes reunidos no rio
+- fundo: azul
+  blocos:
+  - tipo: caixa
+    estilo: destaque
+    selo: ISO 21101
+    titulo: Certificado ABNT NBR ISO 21101:2014
+    texto: Sistema de Gestão da Segurança para turismo de aventura — atividade de rafting no Rio Paraibuna, zona de amortecimento do Parque Estadual da Serra do Mar, Núcleo Santa Virgínia. Certificação voluntária, válida de 08/10/2025 a 08/10/2026.
+  - tipo: botoes
+    itens:
+    - texto: Política de segurança
+      link: politica-de-seguranca.html
+      estilo: azul
+      icone: seta
+- fundo: branco
+  lado:
+    imagem: mascote-fala.webp
+    alt: Mascote Tamanduá-de-colete
+    posicao: esquerda
+  blocos:
+  - tipo: sobretitulo
+    texto: Mascote
+  - tipo: titulo
+    titulo: Tamanduá-de-colete
+  - tipo: destaque
+    texto: '… Fiquei encantado ao saber que as pessoas não vinham apenas fazer rafting: elas aprendiam, durante a descida, a grande importância de preservar o que estavam vendo — a minha casa, que vocês chamam de Mata Atlântica, que hoje é preservada pelo Parque Estadual da Serra do Mar.'
+  - tipo: botoes
+    itens:
+    - texto: Conheça o mascote
+      link: mascote.html
+      estilo: linha
+      icone: seta
+- fundo: suave
+  sobretitulo: Onde estamos
+  titulo: Na Mata Atlântica, Patrimônio da Humanidade
+  blocos:
+  - tipo: cartoes
+    estilo: largo
+    itens:
+    - imagem: rio-paraibuna-mata.webp
+      alt: Rio Paraibuna cercado pela Mata Atlântica
+      titulo: Pq. Estadual da Serra do Mar
+      texto: Zona de amortecimento e Núcleo Santa Virgínia
+      link: pq-estadual-da-serra-do-mar.html
+    - imagem: sao-luiz-coreto.webp
+      alt: Coreto e casarões históricos de São Luiz do Paraitinga
+      titulo: São Luiz do Paraitinga
+      texto: Patrimônio histórico
+      link: sao-luiz-do-paraitinga.html

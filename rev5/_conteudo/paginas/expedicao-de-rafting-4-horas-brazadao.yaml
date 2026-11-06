@@ -1,0 +1,83 @@
+titulo_aba: Expedição de Rafting 4 Horas – Brazadão | Cia de Rafting
+descricao: Rafting de aproximadamente 4 horas no Rio Paraibuna, em Natividade da Serra, com parada na Praia do Funilzão. Ponto de encontro no km 59 da Rod. Oswaldo Cruz.
+topo:
+  titulo: Expedição de rafting 4 horas
+  subtitulo: Brazadão · Rio Paraibuna
+  imagem: rafting-comemoracao.webp
+  alt: Grupo comemorando no bote
+  botoes:
+  - texto: Reservar pelo WhatsApp
+    estilo: whatsapp
+    mensagem: Olá, Cia. de Rafting! Gostaria de reservar a Expedição de Rafting 4 horas (Brazadão).
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: selos
+    itens:
+    - Condutores ABNT NBR 15.370
+    - Seguro saúde/viagem incluso
+  - tipo: fatos
+    itens:
+    - rotulo: Percurso
+      valor: Rio Paraibuna (município de Natividade da Serra)
+    - rotulo: Duração
+      valor: Aproximadamente 4 horas de rio
+    - rotulo: Chegada no ponto de encontro
+      valor: Até 08h00 da manhã
+  - tipo: texto
+    texto: |-
+      **O que oferecemos:** bote inflável para 5 passageiros, capacetes, coletes salva-vidas, remos, jaquetas de frio, instrutores habilitados na Norma ABNT NBR 15.370 – Condutores de Rafting, e seguro saúde/viagem.
+
+      **O que levar:** par extra de tênis, camiseta, short, toalha, repelente, protetor solar e máquina fotográfica. Para quem usa óculos, é recomendável algum tipo de protetor que evite quedas.
+- fundo: suave
+  titulo: Fotos
+  blocos:
+  - tipo: galeria
+    titulo: Fotos do rafting 4 horas
+    fotos:
+    - imagem: rafting-comemoracao.webp
+      alt: Grupo comemorando no bote
+    - imagem: rafting-onda.webp
+      alt: Bote furando uma onda
+    - imagem: rafting-grupo-remos.webp
+      alt: Grupo remando juntos
+    - imagem: rafting-bote.webp
+      alt: Bote descendo o rio
+    - imagem: grupo-pedras.webp
+      alt: Grupo nas pedras do rio
+    - imagem: rafting-remos.webp
+      alt: Remos levantados no bote
+    - imagem: grupo-remos.webp
+      alt: Grupo posando com remos e coletes
+    - imagem: peixes-rio.webp
+      alt: Águas transparentes do Rio Paraibuna
+    - imagem: briefing-grupo.webp
+      alt: Briefing de segurança com o grupo
+    - imagem: remos-amarelos.webp
+      alt: Remos amarelos prontos para a descida
+    - imagem: rio-paisagem.webp
+      alt: Paisagem do Rio Paraibuna
+    - imagem: grupo-rio.webp
+      alt: Botes reunidos no rio
+    - imagem: hero-corredeira.webp
+      alt: Bote na corredeira
+    - imagem: rio-paraibuna-mata.webp
+      alt: Rio Paraibuna e a Mata Atlântica
+- fundo: branco
+  titulo: Local
+  blocos:
+  - tipo: texto
+    texto: Nosso ponto de encontro é na Rodovia Oswaldo Cruz, no km 59, no complexo Manacá da Serra, que oferece estacionamento, sanitários e refeições. Deste local, os passageiros são deslocados em transporte terceirizado adequado até o início da atividade, na beira do Rio Paraibuna. Além da aventura, você poderá apreciar as belezas da Floresta Atlântica, com uma parada na Praia do Funilzão para desfrutar do nosso lanche e das águas transparentes do Rio Paraibuna. Ao final do rafting, embarcamos de volta ao ponto de encontro para a troca de roupa.
+- fundo: suave
+  titulo: Acesso
+  blocos:
+  - tipo: texto
+    texto: São Luiz do Paraitinga fica a 200 km de São Paulo, seguindo pela Rodovia Ayrton Senna/Carvalho Pinto ou pela Dutra, sentido Rio de Janeiro, até Taubaté, e depois pela Rodovia Oswaldo Cruz, sentido Litoral Norte (Ubatuba – saída 111), até o km 59, no complexo Manacá da Serra.
+  - tipo: botoes
+    itens:
+    - texto: Reservar pelo WhatsApp
+      estilo: whatsapp
+      mensagem: Olá, Cia. de Rafting! Gostaria de reservar a Expedição de Rafting 4 horas (Brazadão).
+    - texto: Ver a expedição de 6 horas
+      link: expedicao-de-rafting-6-horas-nucleo.html
+      estilo: linha

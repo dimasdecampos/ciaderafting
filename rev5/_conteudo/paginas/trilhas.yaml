@@ -1,0 +1,105 @@
+titulo_aba: Trilhas | Brasil | Cia de Rafting
+descricao: 'Trilhas guiadas no Parque Estadual da Serra do Mar – Núcleo Santa Virgínia: Pirapitingas, Poço do Pito e Corcovado.'
+topo:
+  titulo: Trilhas
+  imagem: trilha-grupo.webp
+  alt: Grupo em trilha na Mata Atlântica
+  botoes:
+  - texto: Agendar uma trilha
+    estilo: whatsapp
+    mensagem: Olá, Cia. de Rafting! Gostaria de informações sobre as trilhas.
+secoes:
+- fundo: branco
+  blocos:
+  - tipo: destaque
+    texto: A palavra trekking significa jornada, "uma jornada a pé". A caminhada ou trekking em trilhas é a mais básica das atividades humanas que se pode realizar num ambiente ao ar livre. Com o crescente interesse das pessoas por esta atividade, o grau de aperfeiçoamento exigido numa trilha passa pelo ser humano que a conduz, pela segurança, pelos equipamentos e pelo estudo de capacidade de carga do ambiente visitado.
+  - tipo: texto
+    texto: |-
+      Dentro destes conceitos, a Cia de Rafting preparou roteiros de trilhas que podem ser realizados por pessoas dos oito aos oitenta anos, por famílias e por grupos mais avançados na arte de caminhar, todos dentro do Parque Estadual da Serra do Mar – Núcleo Santa Virgínia.
+
+      O trekking também é utilizado como ferramenta para o fomento e o desenvolvimento da Educação Ambiental, através dos processos de Trilhas Interpretativas (Programa de Estudos do Meio).
+  lado:
+    imagem: mascote-trilha.webp
+    alt: Mascote Tamanduá-de-colete pronto para a trilha
+    posicao: esquerda
+- fundo: suave
+  titulo: Roteiros
+  blocos:
+  - tipo: trilha
+    nome: Trilha das Pirapitingas
+    nivel: Fácil
+    fatos:
+    - rotulo: Distância
+      valor: 5 km (ida e volta)
+    - rotulo: Duração
+      valor: Meio dia (4h30)
+    - rotulo: Intensidade
+      valor: Moderada
+    - rotulo: Indicação
+      valor: +10 anos e adultos
+    - rotulo: Nº de pessoas
+      valor: Mínimo a consultar · máximo 40
+    - rotulo: Horário
+      valor: 9h00 da manhã
+    detalhes: |-
+      **Roteiro:** Ecoturismo.
+
+      **Ambiente:** Unidade de Conservação da Mata Atlântica; observação de fauna e flora em mata secundária inicial e madura, com remanescentes de mata primária; mirante do vale do Rio Paraibuna, Cachoeira das Andorinhas, Cachoeira do Salto Grande e mirante da Cachoeira do Saltinho.
+
+      **Incluso:** seguro viagem e guia.
+
+      **Ponto de encontro:** Núcleo Santa Virgínia, com acesso pelo km 78 da Rodovia Oswaldo Cruz, seguindo por mais 3 km de estrada de terra até o estacionamento da base do Parque Estadual da Serra do Mar.
+  - tipo: trilha
+    nome: Trilha do Poço do Pito
+    nivel: Fácil
+    fatos:
+    - rotulo: Distância
+      valor: 6 km (ida e volta)
+    - rotulo: Duração
+      valor: Meio dia (4h30)
+    - rotulo: Intensidade
+      valor: Moderada
+    - rotulo: Indicação
+      valor: +10 anos e adultos
+    - rotulo: Nº de pessoas
+      valor: Mínimo a consultar · máximo 40
+    - rotulo: Horário
+      valor: 9h00 da manhã
+    detalhes: |-
+      **Roteiro:** Ecoturismo.
+
+      **Ambiente:** Unidade de Conservação da Mata Atlântica; observação de fauna e flora, floresta secundária inicial, lajeado e Cachoeira do Poço do Pito.
+
+      **Incluso:** seguro viagem e guia.
+
+      **Ponto de encontro:** Núcleo Santa Virgínia, com acesso pelo km 78 da Rodovia Oswaldo Cruz, seguindo por mais 3 km de estrada de terra até o estacionamento da base do Parque Estadual da Serra do Mar.
+  - tipo: trilha
+    nome: Trilha do Corcovado
+    nivel: Pesada
+    pesada: true
+    fatos:
+    - rotulo: Distância
+      valor: 17 km (ida e volta)
+    - rotulo: Duração
+      valor: 1 dia (de 8 a 10 horas)
+    - rotulo: Intensidade
+      valor: Intensa
+    - rotulo: Indicação
+      valor: +15 anos e adultos
+    - rotulo: Nº de pessoas
+      valor: Mínimo a consultar · máximo 12
+    - rotulo: Horário
+      valor: 6h00 da manhã
+    detalhes: |-
+      **Roteiro:** Ecoturismo.
+
+      **Ambiente:** Unidade de Conservação da Mata Atlântica; observação de fauna e flora, Ribeirão Grande, Cachoeira da Pedra Furada, Cachoeira do Rio Calçado e Pedra do Corcovado.
+
+      **Incluso:** seguro viagem, guia e transporte local.
+
+      **Ponto de encontro:** Cia de Rafting, Rua Cel. Domingues de Castro, 192 B, Centro, São Luiz do Paraitinga – SP.
+  - tipo: botoes
+    itens:
+    - texto: Agendar uma trilha
+      estilo: whatsapp
+      mensagem: Olá, Cia. de Rafting! Gostaria de informações sobre as trilhas.
