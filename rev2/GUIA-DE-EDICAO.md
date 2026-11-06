@@ -30,7 +30,7 @@ O site é editado por um painel na internet (Pages CMS). Cada alteração salva 
 
 ## Para quem mantém o código
 
-- Conteúdo: `rev2/_conteudo/site.yml` e `rev2/_conteudo/paginas/*.yml`. Formato dos blocos: `rev2/_src/build.py` (funções `b_*`) e telas do painel: `.pages.yml` (precisam andar juntos).
+- Conteúdo: `rev2/_conteudo/site.yml` e `rev2/_conteudo/paginas/*.yaml`. Formato dos blocos: `rev2/_src/build.py` (funções `b_*`) e telas do painel: `.pages.yml` (precisam andar juntos).
 - Gerar as páginas localmente: `pip install pillow pyyaml markdown` e `python rev2/_src/build.py`.
 - Os `.html` da rev2 que estão no repositório são regenerados a cada publicação; não editar à mão.
 - Fotos enviadas em jpg/png são convertidas para `rev2/assets/img/auto/` (não vai para o Git; é gerado na publicação).

@@ -4,7 +4,7 @@ Uso (a partir da pasta rev2):  python _src/build.py
 Dependências:                  pip install pillow pyyaml markdown
 
 - _conteudo/site.yml            dados gerais (contatos, redes, rodapé)
-- _conteudo/paginas/*.yml       uma página por arquivo: dados da aba + lista de blocos
+- _conteudo/paginas/*.yaml       uma página por arquivo: dados da aba + lista de blocos
 O painel de edição (Pages CMS, ver /.pages.yml na raiz do repositório) altera esses arquivos;
 uma automação do GitHub roda este script e publica o site.
 """
